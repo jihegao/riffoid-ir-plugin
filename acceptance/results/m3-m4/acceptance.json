@@ -1,6 +1,6 @@
 {
   "schema": "riffoid-ir.dual-host-acceptance/v1",
-  "recordedAt": "2026-10-18T22:11:20.267905+00:00",
+  "recordedAt": "2026-10-18T23:05:23.933053+00:00",
   "packageVersion": "0.3.1",
   "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
   "piWeb": {
@@ -75,12 +75,12 @@
     "deployment": null
   },
   "milestones": {
-    "M3": "implementation and both native image probes passed; confirmed-baseline integration and online closure pending",
+    "M3": "implementation, native probes, OCI integrity and offline Gateway build passed; confirmed-baseline integration and online closure pending",
     "M4": "PiWeb actual acceptance passed; dual-host completion pending"
   },
   "privacy": "Only source and redacted JSON/text are public. Screenshots, simpack binaries and raw sessions remain local.",
   "riffoidPreparation": {
-    "status": "actual native image probes passed; online integration pending",
+    "status": "native image probes, OCI integrity and offline Gateway build passed; online integration pending",
     "packageVersion": "0.3.1",
     "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
     "projectTools": {
@@ -106,6 +106,22 @@
     },
     "registryPublication": null,
     "productionDeployment": null,
-    "finalBaselineConfirmed": false
+    "finalBaselineConfirmed": false,
+    "ociIntegrity": {
+      "status": "passed-both-images",
+      "originalSaveAttemptsPerImage": 1,
+      "bothLocalArchiveProofsEqualRemote": true,
+      "evidence": "https://github.com/jihegao/riffology-cloud/blob/codex/ir-m3-m4-20261018/evidence/releases/riffoid-ir-m3-m4-20261019/oci-image-verification.json"
+    },
+    "gatewayOfflineBuild": {
+      "status": "passed-offline-candidate-only",
+      "evidence": "https://github.com/jihegao/riffology-cloud/blob/codex/ir-m3-m4-20261018/evidence/releases/riffoid-ir-m3-m4-20261019/gateway-offline-build.json"
+    },
+    "latestCandidateCi": {
+      "nodePassed": 3446,
+      "nodeSkipped": 13,
+      "pythonPassed": 8,
+      "evidence": "https://github.com/jihegao/riffology-cloud/actions/runs/39171216408/job/117804486578"
+    }
   }
 }
