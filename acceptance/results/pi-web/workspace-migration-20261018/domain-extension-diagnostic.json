@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "snapshot": "- heading \"IR Model Studio\" [ref=e1] level=1\n- status \"● 浏览器执行器已连接\" [ref=e2]\n- heading \"业务模型 Business IR\" [ref=e3] level=2\n- button \"重新读取\" [ref=e4]\n- button \"创建 B1 草稿\" [ref=e5]\n- status \"Aircraft / 飞机F35-01 · availableF35-02 · availableMissions / 任务sortie-a · 00:20sortie-b · 00:45Rules / 任务规则basic-sortie: 10 分钟，成功点 0.75Resources / 资源flight-line:\n… truncated\" [ref=e22]\n- button \"查看与编辑模型 JSON · model/business-ir.draft.json\" [ref=e6]\n- textbox \"业务模型草稿\" [ref=e7] [value=\"{\\n  \\\"fingerprint\\\": \\\"58bc6d1abdc3339a071e387bd359ce92d7f22e57204182e30d991fc0e6b1e0de\\\",\\n  \\\"payload\\\": {\\n    \\\"sections\\\": {\\n\\n… truncated\"]\n- button \"保存草稿\" [ref=e8]\n- button \"1 · 封存并检查\" [ref=e9]\n- button \"2 · 编译 Plan\" [ref=e10]\n- button \"3 · 浏览器运行\" [ref=e11] [disabled]\n- status \"browser-capability: A positive failure rate requires a compiled repair activity plan.components[0] 当前浏览器执行器需要扩展。可将上述能力诊断交给 Pi 继续开发领域包；本次尚未执行。\" [ref=e12]\n- heading \"实验记录 Runs\" [ref=e13] level=2\n- button \"刷新记录\" [ref=e14]\n- button \"按原条件复跑\" [ref=e15]\n- combobox \"已保存的运行\" [ref=e16] [value=\"run-8a0563a6-f305-48ec-9c46-7b195bb47e4f\"]\n- status \"run-8a0563a6-f305-48ec-9c46-7b195bb47e4f · succeeded · 复跑自 run-89efa612-9a62-4b68-a45d-068a620bd5c8\" [ref=e17]\n- button \"执行事件与业务规则\" [ref=e18]\n- button \"模型、产物与执行身份\" [ref=e19]\n- button \"与另一运行比较\" [ref=e20]\n- combobox \"对照运行\" [ref=e21]",
+  "checks": [
+    "failure without repair rejected",
+    "domain development offered",
+    "run button disabled",
+    "no extra run dispatched"
+  ]
+}

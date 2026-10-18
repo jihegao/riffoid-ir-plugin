@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "pluginVersion": "0.2.1",
+  "provider": "xai",
+  "model": "grok-4.7",
+  "thinkingLevel": "high",
+  "scope": "read-only domain extension diagnosis",
+  "toolCalls": 28,
+  "toolCounts": {
+    "read": 17,
+    "bash": 11
+  },
+  "sourceInspection": true,
+  "simulationPerformed": false,
+  "domainSemanticsImplemented": false,
+  "finalResponse": "先前的拒绝是误判，不是宿主权限或代码禁令。B1 只是已安装浏览器运行时 `aircraft-b1-browser/0.2.0` 的执行边界。`src/domain-pack.mjs` 写明该声明描述的是已实现语义，不是开发限制；`src/project.mjs` 在编译后若发现浏览器不支持，会返回 `capabilityGap.layer = browser-runtime`，但这只是能力诊断。源码可读，本轮未改文件、未运行仿真。\n\n## 已有能力\n\n编译器 0.1.0 的 aircraft lowering 已经消费这些字段，不需要靠新增被忽略的 JSON 字段来实现：\n\n- `mission_calendar.day_index`、`dailyRepeatCount`、`intervalHours` 会展开为带计划时刻的任务。未提供 `intervalHours` 时，重复间隔默认为 24 小时。计划时刻不小于 `time.duration_minutes` 与任务剖面时长中较小值的任务会被丢弃。\n- 组件的 `failure_distribution` 会转换成 Plan 中的 `failure_rate_per_hour`。指数分布读取 `lambda` 或 `rate`。Weibull、正态、均匀和固定分布只被折算成常数率，参考运行时随后仍按指数分布抽样，因此不能把它们视为原分布已被忠实执行。\n- `special_repair_profile.repairTimeMinutes` 会变成固定的 `repair_duration_minutes`。维修活动通过 `operations_phase: repair` 或名称识别，并用 `equipment_id` 关联组件。\n- 独立参考运行时支持 `b2_failure_repair`：只在飞机状态为 `flying` 时递减故障计时，故障传到装备树根节点后中断飞行并生成维修作业；维修完成后再抽样。没有维修活动时，参考运行时会报错，不会静默忽略。\n\n当前草稿没有这些字段。组件只有根节点 `f35`，日历只有第 1 天，两项任务的 `dailyRepeatCount` 都是 1，时长为 60 分钟。\n\n## MTBF / MTTR 的缺口\n\n| 层 | 现状 | 需要补齐的内容 |\n|---|---|---|\n| 业务输入 | 没有名为 MTBF 或 MTTR 的字段 | 明确分布、单位和时钟后，写入会被 lowering 消费的 `failure_distribution`、维修活动和维修时长 |\n| 编译器 | 已有故障率与固定维修时长的 lowering | 若要求原生 MTBF 字段或非指数分布，必须改可维护的编译器源码，不能直接改 `.compiler/` 提取模块后仍声称使用原 wheel |\n| 浏览器 | `planDiagnostics` 拒绝非零故障率和维修活动；阶段列表虽有 `failures`，但没有对应处理函数；活动阶段只允许航前、再出动、航后 | 按参考运行时实现飞行暴露计时、故障传播、维修作业和维修后重置，验证后才能放开能力检查 |\n| 能力声明与测试 | `notImplemented` 包含故障抽样和维修 | 更新声明、版本和独立对照测试，同时保留 B1 回归 |\n\n因此，当前不能通过只改草稿让浏览器执行故障维修。\n\n## 三天、每机每天四架次的缺口\n\n编译器可以展开三天日历，但“每机每天四架次”不是现有字段的含义。`dailyRepeatCount: 4` 表示同一任务项重复四次，不绑定机尾。运行时选择第一架可用且机型匹配的飞机。已有 B1 运行已经观察到两次任务都由 `F35-01` 执行，`F35-02` 的起飞次数为 0。总架次数相等不能证明逐机需求成立。\n\n三天需要同时把 `time.duration_minutes`、任务剖面时长和停止条件设为 4320 分钟，否则额外任务会在编译时被丢弃或提前停止。浏览器目前要求时长和计划起飞时刻都小于 1440，所以三日 Plan 在分发前会被拒绝。浏览器里虽有按 1440 分钟计算日序号的片段，但跨日航后触发与参考运行时不一致。只删除上限并不能实现日间状态衔接。\n\n现有资源是 1 名机务和 1 台保障车。两架飞机每天各飞四次会形成资源竞争，故障后更不能保证完成数量。\n\n## 仍缺的业务参数\n\n这些值会影响结果，不能用测试值代替：\n\n- MTBF 的数值、单位和分布。只有约定指数分布且单位为小时时，故障率才是 `1 / MTBF`。\n- 故障时钟是飞行暴露时间还是日历时间。参考运行时只实现了飞行暴露时间。\n- 故障作用于哪个组件，维修后是否重置计时，以及是否允许飞行中中断。\n- MTTR 的数值、单位，以及它是固定时长还是随机分布。现有字段只支持固定分钟数。\n- 维修所需人员和设备，以及是否与飞行线共用当前容量。\n- “每机每天四架次”是逐机计划需求、机队总波次，还是完成保证；是否固定机尾，故障后能否由另一架飞机替代。\n- 四个架次的出发时刻或 `intervalHours`。若不提供间隔，现有 lowering 会按 24 小时重复，不会生成同一天的四次出动。"
+}

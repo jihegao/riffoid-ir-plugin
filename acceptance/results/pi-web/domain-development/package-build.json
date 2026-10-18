@@ -1,0 +1,186 @@
+{
+  "id": "riffoid-ir-plugin@0.2.1",
+  "name": "riffoid-ir-plugin",
+  "version": "0.2.1",
+  "size": 60693,
+  "unpackedSize": 181754,
+  "shasum": "de5b0a640b2aa4f883b8d7c6746a18f830ffcd00",
+  "integrity": "sha512-ziv9XztlSM5szjRe67ZkLIUIl+B9i/tckxJvvexE3YEyeBPLmc4LxdnCv8mxkOrB8/HgjzbLdhfSuTqCvffRXg==",
+  "filename": "riffoid-ir-plugin-0.2.1.tgz",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 6214,
+      "mode": 420
+    },
+    {
+      "path": "acceptance/b1/business-ir.json",
+      "size": 4509,
+      "mode": 420
+    },
+    {
+      "path": "acceptance/b1/expected.json",
+      "size": 7754,
+      "mode": 420
+    },
+    {
+      "path": "adapters/riffoid/index.mjs",
+      "size": 4062,
+      "mode": 420
+    },
+    {
+      "path": "browser/app.css",
+      "size": 3707,
+      "mode": 420
+    },
+    {
+      "path": "browser/app.html",
+      "size": 2676,
+      "mode": 420
+    },
+    {
+      "path": "browser/app.js",
+      "size": 11037,
+      "mode": 420
+    },
+    {
+      "path": "browser/pi-web-plugin.js",
+      "size": 3025,
+      "mode": 420
+    },
+    {
+      "path": "browser/runtime.js",
+      "size": 16270,
+      "mode": 420
+    },
+    {
+      "path": "browser/worker.js",
+      "size": 1118,
+      "mode": 420
+    },
+    {
+      "path": "docs/acceptance.md",
+      "size": 8555,
+      "mode": 420
+    },
+    {
+      "path": "docs/domain-development.md",
+      "size": 4906,
+      "mode": 420
+    },
+    {
+      "path": "docs/functional-requirements-v0.2.md",
+      "size": 24000,
+      "mode": 420
+    },
+    {
+      "path": "docs/model-fields.md",
+      "size": 2161,
+      "mode": 420
+    },
+    {
+      "path": "docs/riffoid-integration.md",
+      "size": 2781,
+      "mode": 420
+    },
+    {
+      "path": "extensions/riffoid-ir/index.js",
+      "size": 4859,
+      "mode": 420
+    },
+    {
+      "path": "package.json",
+      "size": 977,
+      "mode": 420
+    },
+    {
+      "path": "scripts/bootstrap-compiler.py",
+      "size": 1564,
+      "mode": 420
+    },
+    {
+      "path": "scripts/check.mjs",
+      "size": 609,
+      "mode": 420
+    },
+    {
+      "path": "scripts/compiler.py",
+      "size": 3564,
+      "mode": 420
+    },
+    {
+      "path": "scripts/install-local.mjs",
+      "size": 1063,
+      "mode": 420
+    },
+    {
+      "path": "scripts/test-riff-pi.mjs",
+      "size": 10853,
+      "mode": 420
+    },
+    {
+      "path": "skills/riffoid-ir/SKILL.md",
+      "size": 3785,
+      "mode": 420
+    },
+    {
+      "path": "src/broker.mjs",
+      "size": 6760,
+      "mode": 420
+    },
+    {
+      "path": "src/compiler.mjs",
+      "size": 1577,
+      "mode": 420
+    },
+    {
+      "path": "src/domain-pack.mjs",
+      "size": 2414,
+      "mode": 420
+    },
+    {
+      "path": "src/live-connection.mjs",
+      "size": 1348,
+      "mode": 420
+    },
+    {
+      "path": "src/project.mjs",
+      "size": 18321,
+      "mode": 420
+    },
+    {
+      "path": "src/tools.mjs",
+      "size": 1779,
+      "mode": 420
+    },
+    {
+      "path": "tests/broker.test.mjs",
+      "size": 1816,
+      "mode": 420
+    },
+    {
+      "path": "tests/conformance.test.mjs",
+      "size": 5027,
+      "mode": 420
+    },
+    {
+      "path": "tests/development.test.mjs",
+      "size": 3826,
+      "mode": 420
+    },
+    {
+      "path": "tests/package.test.mjs",
+      "size": 2621,
+      "mode": 420
+    },
+    {
+      "path": "tests/project.test.mjs",
+      "size": 6216,
+      "mode": 420
+    }
+  ],
+  "entryCount": 34,
+  "bundled": [],
+  "sha256": "4c88dbbec6b98f087e5cb07b63fd878771067b8651ef60d0edd89c44813bf91a",
+  "packedAt": "2026-10-18T12:37:28.131Z"
+}

@@ -1,0 +1,23 @@
+{
+  "filename": "riffoid-ir-plugin-0.2.0.tgz",
+  "sha256": "655966085849aff89766ab1bc9a168c66f974f00015cf3a2b668640fe7bd5b73",
+  "integrity": "sha512-B05eKhoJPERYHEVFF7o+BeFLKJOz2ZOI8tXSQTWqoFZoIGN8Bb1PnFryYsfWJWvkK/V4IxAwUGDm8Rj8H7rk1w==",
+  "size": 53595,
+  "unpackedSize": 161373,
+  "entryCount": 30,
+  "testedAt": "2026-10-18T10:26:02.080Z",
+  "distributionSmoke": {
+    "status": "passed",
+    "isolatedDirectory": "/tmp/riffoid-package-O3nOPJ",
+    "piVersion": "1.3.0",
+    "tools": [
+      "project_ir_check",
+      "project_ir_compile",
+      "project_ir_run",
+      "project_ir_result"
+    ],
+    "check": "passed",
+    "compile": "succeeded",
+    "missingBrowser": "browser_not_connected"
+  }
+}

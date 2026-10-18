@@ -1,0 +1,88 @@
+{
+  "lifecycleVersion": 2,
+  "terminalMode": "required",
+  "plugins": [
+    {
+      "id": "pi-web.terminal",
+      "module": "/pi-web-plugins/pi-web.terminal/browser/pi-web-plugin.js?v=sha256%3Aafbf5884809978e51d9bb11aba2ffc562a9fe46e1f1828acde292b2ba139938f",
+      "backendRevision": "sha256:afbf5884809978e51d9bb11aba2ffc562a9fe46e1f1828acde292b2ba139938f",
+      "pairedRequestVersion": 1,
+      "pairedChannelVersion": 1,
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": true
+    },
+    {
+      "id": "files",
+      "module": "/pi-web-plugins/files/browser/pi-web-plugin.js?v=sha256%3Ae04bac4f44379d1b70e64d4980e8f640b7774e6010698d4e3c8f80f0a6ac6146",
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": false
+    },
+    {
+      "id": "git",
+      "module": "/pi-web-plugins/git/browser/pi-web-plugin.js?v=sha256%3A16504c85b764af2603672634b405c6280951275a65050dc0b652d93e3b573c8b",
+      "backendRevision": "sha256:16504c85b764af2603672634b405c6280951275a65050dc0b652d93e3b573c8b",
+      "pairedRequestVersion": 1,
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": true
+    },
+    {
+      "id": "info",
+      "module": "/pi-web-plugins/info/pi-web-plugin.js?v=sha256%3Adef78a3fdd62e5afa4123181fb461e3098411bf694d5e8e9a410353de984be22",
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": false
+    },
+    {
+      "id": "mermaid",
+      "module": "/pi-web-plugins/mermaid/browser/pi-web-plugin.js?v=sha256%3Af8349f0300b35a216f8593f5d846601303c9ea5880246c18afef88e2d0a860f4",
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": false
+    },
+    {
+      "id": "relays",
+      "module": "/pi-web-plugins/relays/pi-web-plugin.js?v=sha256%3A4a1445e6d5d0d335489a540aa36f4b80f0b1e8130204893bcc0e267b2c156121",
+      "source": "../../../../opt/homebrew/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/relays",
+      "scope": "user",
+      "machineSpecific": false
+    },
+    {
+      "id": "riff-browser",
+      "module": "/pi-web-plugins/riff-browser/browser/pi-web-plugin.js?v=sha256%3Ad6f75dd56d4df17175d6fb6e8600e03819073815f89ea212de7cb192246126dd",
+      "source": "local",
+      "scope": "local",
+      "machineSpecific": true
+    },
+    {
+      "id": "riffoid-ir",
+      "module": "/pi-web-plugins/riffoid-ir/browser/pi-web-plugin.js?v=sha256%3A154ce951d429faee66b651aea1280cae7bdd8344a12f09fa91d61417a047efd2",
+      "source": "local",
+      "scope": "local",
+      "machineSpecific": true
+    },
+    {
+      "id": "updates",
+      "module": "/pi-web-plugins/updates/pi-web-plugin.js?v=sha256%3A64fa5824ff8d4bef64e5f683c77c140512051557210ec7e141a0c839cbf5ebe5",
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": true
+    },
+    {
+      "id": "workflows",
+      "module": "/pi-web-plugins/workflows/browser/pi-web-plugin.js?v=sha256%3A5ac5d3f88fe23e64f2abce974cc89c6e229d8d336803bcda15273d81388976fa",
+      "source": "../../../../opt/homebrew/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/workflows",
+      "scope": "user",
+      "machineSpecific": true
+    },
+    {
+      "id": "workspace-tasks",
+      "module": "/pi-web-plugins/workspace-tasks/pi-web-plugin.js?v=sha256%3A5d7429d0394808b05241359cb4f3301174dbe7eca39db60659b1008b583eb040",
+      "source": "bundled",
+      "scope": "bundled",
+      "machineSpecific": false
+    }
+  ]
+}

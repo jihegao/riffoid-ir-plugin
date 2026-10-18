@@ -1,0 +1,6 @@
+{
+  "op": "replace",
+  "path": "/payload/sections/mission_profile/collections/composite_tasks/0/definition/taskItems/1/firstWaveTime",
+  "from": "00:40",
+  "value": "00:45"
+}
