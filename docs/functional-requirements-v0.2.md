@@ -1,18 +1,32 @@
 # Riffoid IR Plugin 功能需求与开发合同
 
-**需求版本：v0.2 · 日期：2026-10-18 · 状态：首版开发与验收基线**
+**需求版本：v0.2 · 日期：2026-10-18 · 状态：首版开发与验收基线（唯一依据）**
 
-本合同将 Opus 与 Fable 评审收敛为一个可交付的最小版本，作为本仓库开发、评审和验收的共同依据。本文中的“必须”及 FR、ACC 编号属于首版承诺；实现示例与后续方向不增加首版范围。
+本合同将 Opus 与 Fable 评审收敛为一个可交付的最小版本，作为本仓库开发、评审和验收的唯一依据。本文中的“必须”及 FR、ACC 编号属于首版承诺；实现示例与后续方向不增加首版范围。评审笔记本身不是输入。
 
-本合同优先决定首版功能范围。原 v0.1 使用指南保留为历史设计参考，白皮书保留为长期方向；其中未被本合同纳入的功能不作为首版验收要求。**本次提交建立开发合同和验收输入，不表示插件实现或双端验收已经完成。**
+首版只有本文的 8 项功能需求与 5 项验收。命令只有 `/sim ir`、`/sim code`、`/sim show`。下列材料都不是实现路径：
+
+- [v0.1 使用指南原稿](history/riffoid-ir-plugin-usage-guide-v0.1.md)（`/model`、任务级偏好、订阅与扩展工具）。仓库根目录的同名文件只指向该原稿。
+- 以 `/model` 和平台发布能力为中心的功能需求草稿（约 68 条）。本仓库不收录该草稿；工作区或其他副本中的该稿已被本合同取代。
+- 仓库外文件 `ir-plugin-design-deep-dive.md`、`ir-plugin-guide-review.md`。本仓库没有这两个路径，不得把它们当作仍在维护的输入。
+- [白皮书](../复杂系统建模与仿真白皮书_精炼版_中文.md)：长期架构，不增加首版范围。
+
+上述材料中未被本合同纳入的功能，不作为首版验收要求。**本文建立开发合同和验收输入，不表示插件实现或双端验收已经完成。**
 
 ## 1. 交付目标
 
-用户在**本地 pi-web** 和 **Riffoid 线上 pi-agent** 中，使用同一版本的插件完成：
+用户在**本地 pi-web** 和 **Riffoid 线上 pi-agent** 中，使用同一版本的共享逻辑完成：
 
 > 自然语言需求 → 可审阅、可编辑的 Business IR → 检查 → 编译 → 用户浏览器执行 → 保存结果 → Agent 读取并解释 → 修改模型后重跑。
 
 首版交付单位为：**一个共享包、两个宿主接入、一个确定性案例及一次有效修改。**
+
+共享包是一份 JS/TS 实现（或同一构建产物），内含共享资源、工具逻辑和浏览器模块。两个宿主的接入方式不同：
+
+- **pi-web**：把该包作为可安装的 Pi extension 加载。上游接口允许同包提供 Agent extension 与网页入口。
+- **Riffoid**：受控 Pi 不加载 Pi extension。同一套共享逻辑由宿主已有的 fixedSkills 与 `project_*` 工具桥装配。
+
+项目隔离域内的原生插件与动态工具是后续宿主方向（[JHG-50](https://linear.app/jhgao/issue/JHG-50)），当前仍为 Backlog。首版不实现该加载器，也不在现有受信 Pi 进程上解除 extension 限制。JHG-50 的信任边界是：平台权威留在执行域之外；首版只消费当前受控 Pi 的 fixedSkills 与工具桥，不另建一套插件加载或保存权威。
 
 本合同中的“运行”指浏览器实际执行编译产物；“结果”指该次执行保存的指标与事件；“可恢复”指重新打开项目后仍能读取原模型与结果，并以原产物和输入复跑。
 
@@ -23,7 +37,7 @@
 | 维度 | 首版约定 |
 | --- | --- |
 | 宿主 | 本地 pi-web；Riffoid 线上受控 pi-agent |
-| 发布单位 | 同一个可安装的 JS/TS 包或同一个包构建产物，包含共享资源、工具逻辑、浏览器模块和两端接入 |
+| 发布单位 | 同一个 JS/TS 共享包或同一个包构建产物，包含共享资源、工具逻辑和浏览器模块。pi-web 将其作为可安装的 Pi extension 加载。Riffoid 受控 Pi 不加载 Pi extension，由 fixedSkills 与 `project_*` 工具桥装配同一套共享逻辑 |
 | 领域 | aircraft-support-pack/v0.1；合成 B1 日常保障案例 |
 | Business IR | aircraft-business-ir/v1 |
 | 执行语义 | legacy-minute-v1；一分钟 tick；本合同案例为确定性输入、seed 0 |
@@ -44,15 +58,15 @@ B1 是验证闭环的合成案例，不代表真实业务模型已经验证。�
 | pi-web 接入 | Pi extension 注册工具；网页与后端通信；工作区文件和结果保存 |
 | Riffoid 接入 | fixedSkills、project_* 工具桥、Project Tools、项目页面及结果保存 |
 
-这些是一个包内的职责，不要求分别建仓、独立发布或搭建通用插件框架。LLM 负责理解需求、编辑模型、处理诊断和解释结果；工具内部不需要再启动一轮 LLM。
+这些是一个共享包内的职责，不要求分别建仓、独立发布或搭建通用插件框架。Riffoid 一行是宿主桥接，不是把该包安装成 Pi extension。LLM 负责理解需求、编辑模型、处理诊断和解释结果；工具内部不需要再启动一轮 LLM。
 
 ## 3. 功能需求
 
-### FR-01：同一插件支持两个宿主
+### FR-01：同一共享逻辑支持两个宿主
 
-两个宿主必须使用同一版本的共享 skill、领域资源、工具语义和浏览器执行模块。宿主适配处理工具注册、文件访问、编译调用、页面通信和结果持久化。
+两个宿主必须使用同一版本的共享 skill、领域资源、工具语义和浏览器执行模块。宿主适配只处理工具注册、文件访问、编译调用、页面通信和结果持久化。
 
-交付必须包含两端安装或接入说明、可重复的构建方式及实际验收的宿主版本。pi-web 的上游插件接口可支持同包 Agent extension 与网页插件；Riffoid 的受控 Pi 提供 fixedSkills 与工具桥装配入口。[R3][R4]
+交付必须包含两端接入说明、可重复的构建方式及实际验收的宿主版本。pi-web 按上游插件接口安装并加载该共享包，同包可以同时提供 Agent extension 与网页入口。Riffoid 不把该包当作 Pi extension 安装或加载；受控 Pi 用 fixedSkills 与 `project_*` 工具桥装配同一份共享逻辑。[R3][R4] 项目域原生插件加载属于 [JHG-50](https://linear.app/jhgao/issue/JHG-50)，不改变本条的首版接入方式。
 
 ### FR-02：明确进入建模流程
 
@@ -162,14 +176,14 @@ Riffoid 页面使用 `app/views.json` 和普通 HTML/JS/JSON 资产；pi-web 使
 
 | 环节 | 本地 pi-web | Riffoid 线上 pi-agent |
 | --- | --- | --- |
-| 共享资源与工具 | Pi extension 加载同包资源与四个工具 | fixedSkills 与 project_* 工具桥装配同包逻辑 |
+| 共享资源与工具 | Pi extension 加载同包资源与四个工具 | fixedSkills 与 project_* 工具桥装配同包逻辑；不是 Pi extension 加载 |
 | 模型与编译 | 当前工作区；本地编译进程或已有编译服务 | 项目文件；Project Tools 内现有编译器 |
 | 页面和执行 | pi-web 网页插件承载共享浏览器模块 | `app/views.json` 项目页面承载共享浏览器模块 |
 | 运行发起 | 将同一 runId、冻结产物和输入交给浏览器 | 通过现有项目页面通信完成相同动作 |
 | 结果回传 | 网页/后端接口保存，再供 Agent 读取 | 补具体结果提交动作，保存后经工具桥读取 |
 | 重新打开 | 复用工作区与持久化文件 | 复用项目版本、文件或 Artifact |
 
-**首版主要新增工作有两处：兼容 Plan 的浏览器执行模块，以及浏览器结果回到 Agent 的保存链路。**
+**首版主要新增工作有两处：兼容 Plan 的浏览器执行模块，以及浏览器结果回到 Agent 的保存链路。** Riffoid 列中的装配是桥接共享实现。受控 Pi 当前没有 extension 加载入口；首版不在该进程上安装插件包，也不提前实现 JHG-50 的项目域加载器。
 
 Riffoid 接入沿用当前用户浏览器 native DOM 的通用项目页面方向；旧 Browser Preview 的固定画布和 marks 合同已退出目标。当前模型包是包含 manifest、Business、Core、Plan、lineage 的 ZIP；页面包支持普通 JS/JSON，尚未包含 .simpack 与 .wasm 类型。因此可在编译侧提取 Plan 为 JSON，由共享 JS 模块读取执行。[R7][R8]
 
@@ -232,7 +246,7 @@ Riffoid 接入沿用当前用户浏览器 native DOM 的通用项目页面方向
 
 | 编号 | 需求覆盖 | 操作 | 通过条件与最小证据 |
 | --- | --- | --- | --- |
-| ACC-01 双端完整闭环 | FR-01、02、03、04、05、06 | 安装同版包；检查三个 /sim 命令；用户以自然语言要求按 B1 建模并运行；Agent 写入或基于示例编辑 IR，再调用四个工具 | 两端各保留一条真实会话与工具记录、模型和编译产物引用、浏览器执行记录、保存后的 runId；页面与 Agent 读取同一个 runId 的结果。只生成模型的指令停在模型阶段也须在该会话中核对 |
+| ACC-01 双端完整闭环 | FR-01、02、03、04、05、06 | 两端接入同一版本的共享包（pi-web 安装为 Pi extension；Riffoid 经 fixedSkills 与 project_* 桥装配，不加载 Pi extension）；检查三个 /sim 命令；用户以自然语言要求按 B1 建模并运行；Agent 写入或基于示例编辑 IR，再调用四个工具 | 两端各保留一条真实会话与工具记录、模型和编译产物引用、浏览器执行记录、保存后的 runId；页面与 Agent 读取同一个 runId 的结果。只生成模型的指令停在模型阶段也须在该会话中核对 |
 | ACC-02 确定性结果正确 | FR-04、05、06 | 在两端各编译并运行仓库固定 B1 输入 | 对照 expected.json，必需指标、停止原因及选定事件精确一致；第 30 分钟返回与 relaunch 顺序成立；提交实际结果与比较记录 |
 | ACC-03 修改产生有效变化 | FR-03、04、05、06、07 | 用户要求第二任务晚 5 分钟；Agent 修改第 6.3 节字段、重新编译和运行，解释两次结果 | 新 Business/Plan 身份和 runId；原记录保持原值；第二任务事件按规定平移；Agent 指出计数不变、事件时间改变，并引用两次运行；提交变更 diff、独立参考结果和两端结果 |
 | ACC-04 重开与原条件复跑 | FR-06、08 | 完成修改后，关闭并重新打开项目，读取基准旧运行，再按该 runId 复跑 | 旧模型与结果可读；新运行记录 sourceRunId，使用基准产物与输入而非当前修改版；关键指标及选定事件与基准一致 |
@@ -248,10 +262,10 @@ Riffoid 接入沿用当前用户浏览器 native DOM 的通用项目页面方向
 | --- | --- | --- |
 | M1 | 共享包、建模资源、B1 输入、check/compile | Agent 能生成或编辑 Business IR，并通过现有编译器产出可追溯的模型包与浏览器产物 |
 | M2 | pi-web 接入、共享浏览器执行、结果保存 | 本地用户浏览器运行 B1；Agent 读回同次真实结果 |
-| M3 | Riffoid 接入同一版本的包 | 线上 pi-agent 经 Project Tools 和项目页面完成相同闭环 |
+| M3 | Riffoid 接入同一版本的共享逻辑 | 线上 pi-agent 经 fixedSkills、project_* 工具桥、Project Tools 和项目页面完成相同闭环；不加载 Pi extension |
 | M4 | 修改、重开、复跑与验收记录 | 两端 ACC-01 至 ACC-05 全部通过，提交结果及接入说明 |
 
-最终交付包括：可构建安装的插件源码与包；两端必要接入改动及其提交位置；一份简明用户操作/安装说明；固定输入、参考预期与实际验收记录。接入改动可位于宿主仓库，插件仓库记录对应版本。
+最终交付包括：可构建的共享包源码（pi-web 按 Pi extension 安装；Riffoid 由宿主桥接，不作为 Pi extension 安装）；两端必要接入改动及其提交位置；一份简明用户操作说明，分别写清 pi-web 安装与 Riffoid 桥接接入；固定输入、参考预期与实际验收记录。接入改动可位于宿主仓库，插件仓库记录对应版本。
 
 实现中只因本合同流程无法贯通或验收不能成立而补能力。改变支持语义、固定输入、预期结果或必需功能时，同步修改本合同并说明原因；包内文件拆分、页面样式和普通适配方式由开发者决定。
 
@@ -263,7 +277,9 @@ Riffoid 接入沿用当前用户浏览器 native DOM 的通用项目页面方向
 
 ## 10. 依据与源码基线
 
-引用用于说明复用能力和预期来源；首版承诺以本合同为准。
+引用用于说明复用能力和预期来源。首版承诺只以本合同与 `acceptance/b1/` 为准。
+
+不在本仓库、不得当作首版输入的材料：[v0.1 使用指南原稿](history/riffoid-ir-plugin-usage-guide-v0.1.md)；以 `/model` 和平台发布能力为中心的功能需求草稿（约 68 条，仓库未收录）；`ir-plugin-design-deep-dive.md` 与 `ir-plugin-guide-review.md`（仓库无此路径）。Riffoid 首版接入沿用下面 [R4] 的受控 Pi 与工具桥，不把 [JHG-50](https://linear.app/jhgao/issue/JHG-50) 的项目域原生插件当作已提供的加载方式。
 
 - **[R1]** [编译器 v0.1 产品合同](https://github.com/jihegao/sim_engine_compiler/blob/5900513b3d3d9c581d50ff904dd460c984afbc96/docs/v01-product-contract.md)：公开入口、IR/profile 版本、模型包和示例。
 - **[R2]** [B1 canonical 输入](https://github.com/jihegao/sim_engine_compiler/blob/5900513b3d3d9c581d50ff904dd460c984afbc96/tests/fixtures/synthetic/b1-daily-operations.json)；[B1 独立预期](https://github.com/jihegao/sim_engine_compiler/blob/5900513b3d3d9c581d50ff904dd460c984afbc96/tests/fixtures/synthetic/b1-daily-operations-oracle.json)；[参考一致性测试](https://github.com/jihegao/sim_engine_compiler/blob/5900513b3d3d9c581d50ff904dd460c984afbc96/tests/conformance/test_b1_reference.py)。
