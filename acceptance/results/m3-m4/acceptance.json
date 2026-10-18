@@ -1,6 +1,6 @@
 {
   "schema": "riffoid-ir.dual-host-acceptance/v1",
-  "recordedAt": "2026-10-18T17:07:02.924130+00:00",
+  "recordedAt": "2026-10-18T22:11:20.267905+00:00",
   "packageVersion": "0.3.1",
   "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
   "piWeb": {
@@ -75,8 +75,37 @@
     "deployment": null
   },
   "milestones": {
-    "M3": "implementation under review; online closure pending",
+    "M3": "implementation and both native image probes passed; confirmed-baseline integration and online closure pending",
     "M4": "PiWeb actual acceptance passed; dual-host completion pending"
   },
-  "privacy": "Only source and redacted JSON/text are public. Screenshots, simpack binaries and raw sessions remain local."
+  "privacy": "Only source and redacted JSON/text are public. Screenshots, simpack binaries and raw sessions remain local.",
+  "riffoidPreparation": {
+    "status": "actual native image probes passed; online integration pending",
+    "packageVersion": "0.3.1",
+    "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+    "projectTools": {
+      "status": "passed",
+      "compilerVersion": "0.1.0",
+      "evidence": "https://github.com/jihegao/riffology-cloud/blob/codex/ir-m3-m4-20261018/evidence/releases/riffoid-ir-m3-m4-20261019/project-tools-image-probe.json"
+    },
+    "trustedPi": {
+      "status": "passed",
+      "piSdkVersion": "0.85.0",
+      "uid": 10002,
+      "gid": 10002,
+      "checkedImageTargets": 59,
+      "evidence": "https://github.com/jihegao/riffology-cloud/blob/codex/ir-m3-m4-20261018/evidence/releases/riffoid-ir-m3-m4-20261019/trusted-pi-image-probe.json",
+      "scope": "Actual native host/SDK/supervisor, synthetic model/research/tool transports only."
+    },
+    "integratedSourceCi": {
+      "sourceHead": "f905d790992873f84d539666de63a3b112a4d2e1",
+      "nodePassed": 3446,
+      "nodeSkipped": 13,
+      "pythonPassed": 8,
+      "evidence": "https://github.com/jihegao/riffology-cloud/actions/runs/39153083773/job/117750566057"
+    },
+    "registryPublication": null,
+    "productionDeployment": null,
+    "finalBaselineConfirmed": false
+  }
 }
