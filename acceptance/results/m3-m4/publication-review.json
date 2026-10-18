@@ -38,10 +38,11 @@
     "pi-web/domain-development/pi-diagnosis.jpg": "Historical IR diagnosis; public account name/local paths, model name and displayed usage/cost.",
     "pi-web/workspace-migration-20261018/workspace-migration.jpg": "Historical B1 model studio; public account local home path, unrelated local project label and displayed usage/cost."
   },
-  "limitation": "Pattern scans cannot prove absence of all sensitive information. Two historical screenshots retain local path/project-label and usage/cost context; public publication approval is requested for this concrete scope. Full raw sessions and original source copies remain local.",
+  "limitation": "Review used structural allowlists, source hashes and credential/connection-value checks. The original raw files remain local; public derivatives and exclusions are listed in public-redaction-manifest.json and pi-web/manifest.json.",
   "cleanHistoryCheck": {
     "rawConversationBlobsReachable": false,
     "previousRawCommitsReachable": false,
     "publicBranchBase": "f1f6762e774b5eba63b788a2baacde56d491c0fe"
-  }
+  },
+  "publicationDecision": "Human approved source and redacted JSON/text only. All screenshots and generated binary artifacts remain local."
 }

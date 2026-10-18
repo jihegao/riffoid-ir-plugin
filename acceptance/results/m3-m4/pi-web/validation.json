@@ -1,0 +1,18 @@
+{
+  "schema": "riffoid-ir.public-evidence-validation/v1",
+  "validatedAt": "2026-10-18T17:02:58.653Z",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "realRunCount": 6,
+  "naturalSessionCount": 2,
+  "declaredImageMetadataCount": 4,
+  "imagesCopied": 0,
+  "binaryFilesCopied": 0,
+  "rawSessionsCopied": 0,
+  "exactGraphUseCount": 24,
+  "uniqueExactGraphFiles": 8,
+  "derivedFrozenGraphSummaryCount": 0,
+  "privateValueMatches": 0,
+  "privateFieldMatches": 0,
+  "localAbsolutePathMatches": 0,
+  "scope": "Only this selected public stage was scanned; private original files were not changed."
+}

@@ -9,3 +9,5 @@
 部署、真实会话、运行记录、独立参考结果和最终 ACC 对照在执行后追加；没有实际结果的项目保持 pending。宿主范围及集成基线见 [riffology-cloud#254](https://github.com/jihegao/riffology-cloud/issues/254)。
 
 公开内容按用户选择限源码和脱敏 JSON/文本；历史截图、完整会话与生成的 simpack 二进制保留本机。历史文档中的截图/二进制引用需在保留原件的本机查看。路径脱敏派生文件及原件 SHA 对应见[清单](public-redaction-manifest.json)；冻结模型和运行时字节没有改写。
+
+本轮 Pi Web 的 ACC-01～05 与 riff-pi 已实际通过：[双端验收记录](acceptance.json)、[自然对话/生成阶段/运行与独立参考的公开清单](pi-web/manifest.json)、[边界与一次生成阶段干预说明](pi-web/README.txt)。Riffoid 线上仍为 pending；本地验收不代替 M3 完成定义。

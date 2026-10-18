@@ -1,0 +1,82 @@
+{
+  "schema": "riffoid-ir.dual-host-acceptance/v1",
+  "recordedAt": "2026-10-18T17:07:02.924130+00:00",
+  "packageVersion": "0.3.1",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "piWeb": {
+    "hostVersion": "@jmfederico/pi-web 1.202610.3 / Pi 1.3.0",
+    "agentModel": "xai/grok-4.7",
+    "thinkingLevel": "high",
+    "workspace": "external isolated acceptance workspace",
+    "ACC-01": {
+      "status": "passed",
+      "evidence": "pi-web/natural/summary.json",
+      "note": "Generate-only had one explicit scope clarification/steer; visible request is retained. Four pipeline calls then used one actual browser baseline result.",
+      "sessions": [
+        "pi-web/natural/sessions/01a14fd5-6349-7618-a462-89d86b2bffdd.json",
+        "pi-web/natural/sessions/01a14fe4-5cc4-7618-a462-89db0a751fed.json"
+      ]
+    },
+    "ACC-02": {
+      "status": "passed",
+      "baselineRunId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "requiredMetrics": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        60
+      ],
+      "comparison": "Independent real CompilerSDK reference plus fixed expected selected events."
+    },
+    "ACC-03": {
+      "status": "passed",
+      "variantRunId": "run-7dec298a-3e1b-4668-a11d-9c23fc61ce63",
+      "change": "second mission firstWaveTime 00:40 -> 00:45; first mission unchanged; original saved run unchanged"
+    },
+    "ACC-04": {
+      "status": "passed",
+      "replayRunId": "run-638cc2b8-6ba6-4c72-8bc9-994814b3866d",
+      "sourceRunId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "secondSessionId": "01a14fe4-5cc4-7618-a462-89db0a751fed",
+      "draftRemains": "00:45"
+    },
+    "ACC-05": {
+      "status": "passed",
+      "diagnostic": {
+        "code": "invalid_json",
+        "stage": "load",
+        "line": 1,
+        "column": 210,
+        "message": "Expecting ':' delimiter"
+      },
+      "note": "The successful repair + variant run followed the observed failed check."
+    },
+    "riffPi": {
+      "status": "passed",
+      "runIds": [
+        "run-ffd4d512-9820-43db-82b0-c1080ccbaabd",
+        "run-a58c2bdf-7400-443a-95b0-c632a049b530",
+        "run-c6350d81-7379-4543-b9a0-d7e9778193b2"
+      ],
+      "fiveModelFilesRestoredByteForByte": true,
+      "naturalRunsAndSessionsUnchanged": true
+    },
+    "manifest": "pi-web/manifest.json"
+  },
+  "riffoidOnline": {
+    "ACC-01": "pending",
+    "ACC-02": "pending",
+    "ACC-03": "pending",
+    "ACC-04": "pending",
+    "ACC-05": "pending",
+    "deployment": null
+  },
+  "milestones": {
+    "M3": "implementation under review; online closure pending",
+    "M4": "PiWeb actual acceptance passed; dual-host completion pending"
+  },
+  "privacy": "Only source and redacted JSON/text are public. Screenshots, simpack binaries and raw sessions remain local."
+}
