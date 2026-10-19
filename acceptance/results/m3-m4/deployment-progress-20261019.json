@@ -159,6 +159,66 @@
     ],
     "status": "approved-but-expired-before-arm"
   },
+  "laterApprovedBatchStoppedOnIncompleteBaseline": {
+    "automaticRetry": false,
+    "collectorExitCode": 1,
+    "collectorsStarted": 1,
+    "completeNewBaselineAvailable": false,
+    "humanApprovalRecorded": true,
+    "incompleteBaseline": {
+      "automaticRetry": false,
+      "capturedBodyBytes": 375355,
+      "capturedResponses": 47,
+      "cloudWrites": 0,
+      "complete": false,
+      "endedAtUtc": "2026-10-19T11:08:27.591Z",
+      "onlyGet": true,
+      "rawBodiesIncludedPublicly": false,
+      "startedAtUtc": "2026-10-19T11:07:33.825Z",
+      "stopCode": "hard-request-timeout"
+    },
+    "maintenanceEndPerformed": false,
+    "maintenanceGet": {
+      "actualBrowserGetCount": 1,
+      "additionalBrowserGetCount": 0,
+      "consoleValid": true,
+      "httpStatus": 200,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-observation",
+        "observedAtUtc": "2026-10-19T11:07:26.735Z"
+      },
+      "originalLogicalFactsComparedToDemand": true
+    },
+    "newGatewayPutAttempts": 0,
+    "newResourceComparisonOrPhysicalReleaseProven": false,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-single-collector-terminal-with-incomplete-GET-only-baseline",
+      "observedAtUtc": "2026-10-19T11:08:27.632Z"
+    },
+    "originalCollectorProcessGroupGone": true,
+    "originalCollectorReaped": true,
+    "parentStopCode": "native-child-stopped-retain-identity",
+    "parentStoppedAtUtc": "2026-10-19T11:08:27.632Z",
+    "publisherStarted": false,
+    "recordedGatewayPutAttemptsStill": 2,
+    "riffoidOnlineAccCompleted": 0,
+    "sourceRefs": [
+      "supplementTimeoutBatchArm",
+      "supplementTimeoutParentTerminal",
+      "supplementTimeoutCollectorTerminal",
+      "supplementIncompleteBaselineSafe",
+      "supplementTimeoutWiringStopSafe",
+      "supplementTimeoutBrowserSafeObservation"
+    ],
+    "status": "maintenance-get-200-then-incomplete-baseline-timeout",
+    "stopPhase": "fixed-get-only-bootstrap",
+    "windowEndsAtUtc": "2026-10-19T11:36:55.994Z",
+    "windowStartedAtUtc": "2026-10-19T11:06:55.994Z"
+  },
   "laterCompleteGetReconciliation": {
     "allComparedResourceProjectionsIdentical": true,
     "bothOriginalAppConfigurationsAndVersionsUnchanged": true,
@@ -463,7 +523,7 @@
     "M4": false
   },
   "preparationCreatesNoNewRuntimeObservation": true,
-  "preparedAtUtc": "2026-10-19T10:55:46.304364+00:00",
+  "preparedAtUtc": "2026-10-19T11:12:00.268667+00:00",
   "recordedDeploymentAndAcceptance": {
     "newSuccessfulGatewayAckCount": 0,
     "observation": {
@@ -538,7 +598,7 @@
     "riffoidAcceptanceClaim": false,
     "status": "two-fixed-artifacts-uploaded-and-fully-read-back"
   },
-  "schema": "riffoid-ir.selected-publication-progress/v5",
+  "schema": "riffoid-ir.selected-publication-progress/v6",
   "sourceFiles": {
     "completedGetBootstrapSafe": {
       "basename": "bootstrap-physical.safe.json",
@@ -749,6 +809,36 @@
       "basename": "terminal.safe.json",
       "bytes": 561,
       "sha256": "06642311ac8b69ceeaf3901f1f1224a578e8115d316c1f172a445db16b05a03d"
+    },
+    "supplementIncompleteBaselineSafe": {
+      "basename": "bootstrap-stopped.safe.json",
+      "bytes": 360,
+      "sha256": "a99dd67abc536b22644f406ffa6ac68c708c19f5d02e5b2e46fe61d76ea89066"
+    },
+    "supplementTimeoutBatchArm": {
+      "basename": "arm.safe.json",
+      "bytes": 757,
+      "sha256": "ab3a6353d6e78b671b2356b245de5f50c0d811bd2c97f1d6a6399f75e9d672b8"
+    },
+    "supplementTimeoutBrowserSafeObservation": {
+      "basename": "batch-stop-observation.private.json",
+      "bytes": 2252,
+      "sha256": "d2d89244a8275b2683d51b4ac2faeb153775e26cbf5abe29f17a3b1e01286270"
+    },
+    "supplementTimeoutCollectorTerminal": {
+      "basename": "collect-terminal.safe.json",
+      "bytes": 580,
+      "sha256": "3c012caf94e0c165e266580cc40199abf9a711fe7ac210163ac3011d848f02b3"
+    },
+    "supplementTimeoutParentTerminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 516,
+      "sha256": "11cd373f1ce190c3f28b6175cf7fc7952655dce2b60fc623d6e5e81afdb23788"
+    },
+    "supplementTimeoutWiringStopSafe": {
+      "basename": "owner-wiring-stopped.safe.json",
+      "bytes": 298,
+      "sha256": "329f49f7a7041bc4cbf20917ce35d69bf6f641d59ae60dda2a5eec683a88856e"
     }
   },
   "sourcePullRequests": [

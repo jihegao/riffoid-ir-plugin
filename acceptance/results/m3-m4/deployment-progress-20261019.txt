@@ -12,3 +12,5 @@ Registry 两份固定镜像已完整 GET 读回：TrustedPi 59 次（2 manifest 
 之后获批延后启动期限的新批次于 10:31:37.488Z 真正 arm，截止 11:01:37.488Z，仅启动一个 collector。首个 collect-precredential 维护 GET 于 10:33:03.762Z 返回 HTTP 401 / authentication_required；collector exit1、原进程组已回收，父进程于 10:33:05.866Z 停止。没有 bootstrap、Cloudflare 凭据阶段、baseline 或 publisher，也没有第三次 PUT；source gates 已关闭，未结束维护 hold，未自动重试。认证失败原因尚未确定，新的身份及原 hold 验证仍 pending。主投影仍采用 07:30 的历史完整 GET 和纠错物理观察，没有新增完整 baseline 或物理状态回执；PUT 总数仍为 2，线上 ACC 仍为 0，M3/M4 未完成。
 
 随后独立只读恢复验证成功：10:50:29.764Z 的唯一一次实际 GET 返回 200，hold5/control19 与原要求严格匹配，逻辑 quiet；验证进程 exit0、已回收且原进程组消失。身份匹配仅由受保护服务约束推论，未独立读取身份或认证 API。actualContainerReleaseVerified 仍为 false；此结果不是完整 baseline 或物理释放证明，没有延长 publication arm，也没有新增 publisher 许可、PUT 或线上验收。原 401 与 07:30 完整资源核验仍为各自历史记录；PUT 总数仍为 2，线上 ACC 为 0，M3/M4 未完成。
+
+再后的获批补采集批次于 11:06:55.994Z arm，截止 11:36:55.994Z。唯一维护 GET 于 11:07:26.735Z 返回 200 且 valid=true；随后唯一 collector 在 GET-only baseline 阶段超时：11:07:33.825Z 至 11:08:27.591Z，仅捕获 47 个响应、375355 字节，complete=false，cloudWrites=0，未重试。collector exit1，已回收且原进程组消失；父进程于 11:08:27.632Z 停止。没有完整新基线、publisher 或第三次 PUT，也没有新的完整资源比较或物理释放证明。旧 07:30 资源核验仍为最后完整历史投影；累计 PUT 仍为 2，线上 ACC 为 0，M3/M4 未完成。
