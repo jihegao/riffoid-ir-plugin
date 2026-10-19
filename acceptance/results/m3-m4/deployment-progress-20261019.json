@@ -247,6 +247,112 @@
     ],
     "zeroCostProven": false
   },
+  "laterStandaloneReadOnlyVerification": {
+    "accepted": true,
+    "actualBrowserGetCount": 1,
+    "actualContainerReleaseVerified": false,
+    "automaticRetry": false,
+    "cloudWrites": 0,
+    "controlRevision": 19,
+    "expectedIdentityMatchInferredFromServiceConstraints": true,
+    "holdRevision": 5,
+    "httpStatus": 200,
+    "identityEvidenceScope": "inference-from-protected-service-constraints",
+    "independentIdentityOrAuthenticationApiReadPerformed": false,
+    "logicalQuiescent": true,
+    "newBaselineCaptured": false,
+    "newGatewayPutAttempts": 0,
+    "newPublisherAuthorized": false,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-single-standalone-readonly-GET-and-accepted-verifier-result",
+      "observedAtUtc": "2026-10-19T10:50:29.764Z"
+    },
+    "originalHoldAndControlMatch": true,
+    "originalProcessGroupGone": true,
+    "physicalReleaseProven": false,
+    "processExitCode": 0,
+    "processReaped": true,
+    "publicationArmExtended": false,
+    "recordedGatewayPutAttemptsStill": 2,
+    "riffoidOnlineAccCompleted": 0,
+    "sourceRefs": [
+      "standaloneReadonly200Result",
+      "standaloneReadonly200Supervision",
+      "standaloneReadonly200BrowserReview"
+    ],
+    "status": "passed-independent-readonly-logical-verification"
+  },
+  "latestApprovedBatchStoppedAtInitial401": {
+    "approvalEvidence": {
+      "bytes": 967,
+      "sha256": "0438e5016296aa0eb8c87bde8dd96f98827b721e559fb0314b6d2ec202f87528"
+    },
+    "authenticationRoutineObservation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-complete-safe-receipt-has-no-observation-timestamp",
+      "observedAtUtc": null
+    },
+    "automaticRetry": false,
+    "baselineCaptured": false,
+    "bootstrapCreated": false,
+    "cloudflareCredentialStageReached": false,
+    "collectorExitCode": 1,
+    "collectorsStarted": 1,
+    "freshIdentityAndOriginalHoldVerificationStatus": "pending",
+    "humanApprovalReceived": true,
+    "humanApprovalRecordedAtUtc": "2026-10-19T10:19:44.965736+00:00",
+    "initialMaintenanceGet": {
+      "authenticationFailureCause": "not-established",
+      "automaticRetry": false,
+      "followupGetCount": 0,
+      "getCount": 1,
+      "holdOrControlModified": false,
+      "httpStatus": 401,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-observation",
+        "observedAtUtc": "2026-10-19T10:33:03.762Z"
+      },
+      "phase": "collect-precredential",
+      "safeErrorCode": "authentication_required",
+      "successfulIdentityVerification": false,
+      "successfulOriginalHoldVerification": false
+    },
+    "maintenanceEndPerformed": false,
+    "newGatewayPutAttempts": 0,
+    "newPhysicalOrCompleteBaselineObservationClaimed": false,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "actual-armed-collector-stop-and-original-source-freeze",
+      "observedAtUtc": "2026-10-19T10:38:59.933106+00:00"
+    },
+    "originalAuthenticationRoutineCompleted": true,
+    "originalCollectorProcessGroupConfirmedGone": true,
+    "originalCollectorReaped": true,
+    "parentAndNativeSourceGatesClosed": true,
+    "parentStopCode": "native-child-stopped-retain-identity",
+    "parentStoppedAtUtc": "2026-10-19T10:33:05.866Z",
+    "precredentialStageBasis": "safe-records-and-fixed-source-order",
+    "publisherStarted": false,
+    "recordedGatewayPutAttemptsStill": 2,
+    "riffoidOnlineAccCompleted": 0,
+    "sourceRefs": [
+      "operator401BatchFreeze",
+      "operator401BatchArm",
+      "operator401ParentTerminal",
+      "operator401CollectorTerminal",
+      "operator401SafeObservation",
+      "nextOriginalAuthenticationRoutineSafeComplete"
+    ],
+    "status": "armed-single-collector-stopped-on-initial-maintenance-401",
+    "windowEndsAtUtc": "2026-10-19T11:01:37.488Z",
+    "windowStartedAtUtc": "2026-10-19T10:31:37.488Z"
+  },
   "latestRecordedPublicationBatch": {
     "automaticRetry": false,
     "collectorExitCode": 0,
@@ -357,7 +463,7 @@
     "M4": false
   },
   "preparationCreatesNoNewRuntimeObservation": true,
-  "preparedAtUtc": "2026-10-19T10:04:07.411726+00:00",
+  "preparedAtUtc": "2026-10-19T10:55:46.304364+00:00",
   "recordedDeploymentAndAcceptance": {
     "newSuccessfulGatewayAckCount": 0,
     "observation": {
@@ -432,7 +538,7 @@
     "riffoidAcceptanceClaim": false,
     "status": "two-fixed-artifacts-uploaded-and-fully-read-back"
   },
-  "schema": "riffoid-ir.selected-publication-progress/v3",
+  "schema": "riffoid-ir.selected-publication-progress/v5",
   "sourceFiles": {
     "completedGetBootstrapSafe": {
       "basename": "bootstrap-physical.safe.json",
@@ -559,6 +665,36 @@
       "bytes": 807,
       "sha256": "71ee625825178a86a8b6cd6da42b73d161b91b8fbfbd90d2a67d8b49f55de363"
     },
+    "nextOriginalAuthenticationRoutineSafeComplete": {
+      "basename": "original-refresh-complete.safe.json",
+      "bytes": 812,
+      "sha256": "b2805e91a499ea1eab3f7ad25893d181e5a4e0a861399ab173c8c3bce4e6d4a1"
+    },
+    "operator401BatchArm": {
+      "basename": "arm.safe.json",
+      "bytes": 754,
+      "sha256": "df70dec8b63fd8a516c504c8586d0d00d96fd3643174672d711f44c0a00e90cd"
+    },
+    "operator401BatchFreeze": {
+      "basename": "freeze.safe.json",
+      "bytes": 2739,
+      "sha256": "b80136b2a7213e2d16256e7793323b11d76f9a80fcd8ddcd3761647dc0b306c4"
+    },
+    "operator401CollectorTerminal": {
+      "basename": "collect-terminal.safe.json",
+      "bytes": 580,
+      "sha256": "24127186985e7ec55cae6b06e256bf8b1bb96f040f9bafa4896770dbe7868939"
+    },
+    "operator401ParentTerminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 507,
+      "sha256": "a0d2c29c37788a60d8f95df8dcfd6e07f18ecf3f655cdf2b2329f30467283b83"
+    },
+    "operator401SafeObservation": {
+      "basename": "operator-stop-observation.private.json",
+      "bytes": 1501,
+      "sha256": "d892719fee3603ba372532337eac384e3f082fc0ae9dd6fa252d0dfab8016b78"
+    },
     "registry-project-tools": {
       "basename": "terminal.safe.json",
       "bytes": 9176,
@@ -598,6 +734,21 @@
       "basename": "arm.safe.json",
       "bytes": 770,
       "sha256": "514010f75d999d873a4285acb36e10e47f5d5e7f77c0899a3466429e884e2e33"
+    },
+    "standaloneReadonly200BrowserReview": {
+      "basename": "independent-review.private.json",
+      "bytes": 2731,
+      "sha256": "12e146b663c777a6aa7c0c66cc39d33d67aaaff05cc63aababae8752cf8afe71"
+    },
+    "standaloneReadonly200Result": {
+      "basename": "result.safe.json",
+      "bytes": 1436,
+      "sha256": "0a6c321053b360b4ded842b1eaa2c3671e2d5ecba6a8edc161796b809c3d78c6"
+    },
+    "standaloneReadonly200Supervision": {
+      "basename": "terminal.safe.json",
+      "bytes": 561,
+      "sha256": "06642311ac8b69ceeaf3901f1f1224a578e8115d316c1f172a445db16b05a03d"
     }
   },
   "sourcePullRequests": [

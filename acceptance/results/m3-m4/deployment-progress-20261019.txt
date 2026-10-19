@@ -8,3 +8,7 @@ Registry 两份固定镜像已完整 GET 读回：TrustedPi 59 次（2 manifest 
 既有本地 PiWeb/riff-pi 为 6 次真实运行，插件测试 25/25；PR #2、#256 已合，main 2f588455… 与固定 package 0.3.1 / 45 files / 86b7a28a… 保持。Riffoid 线上 ACC-01～05 全部 pending、已完成 0；M3/M4 未完成。
 
 后来又直接批准了一个新单次窗口，并完成原范围的 OAuth routine；父命令获准时已过 09:30Z 最晚启动时刻，以 latest-approved-start-expired 在 arm 前停止。未创建运行或输出目录，collector/publisher 均未启动，操作端报告新浏览器 GET 为 0。此批没有新 PUT，总数仍为 2；未结束维护 hold，没有新增 quiescence 或物理状态回读。冻结记录时刻为 09:59:25.200837Z，不能把整理时间当成新鲜证据。线上 ACC 仍为 0，M3/M4 未完成。
+
+之后获批延后启动期限的新批次于 10:31:37.488Z 真正 arm，截止 11:01:37.488Z，仅启动一个 collector。首个 collect-precredential 维护 GET 于 10:33:03.762Z 返回 HTTP 401 / authentication_required；collector exit1、原进程组已回收，父进程于 10:33:05.866Z 停止。没有 bootstrap、Cloudflare 凭据阶段、baseline 或 publisher，也没有第三次 PUT；source gates 已关闭，未结束维护 hold，未自动重试。认证失败原因尚未确定，新的身份及原 hold 验证仍 pending。主投影仍采用 07:30 的历史完整 GET 和纠错物理观察，没有新增完整 baseline 或物理状态回执；PUT 总数仍为 2，线上 ACC 仍为 0，M3/M4 未完成。
+
+随后独立只读恢复验证成功：10:50:29.764Z 的唯一一次实际 GET 返回 200，hold5/control19 与原要求严格匹配，逻辑 quiet；验证进程 exit0、已回收且原进程组消失。身份匹配仅由受保护服务约束推论，未独立读取身份或认证 API。actualContainerReleaseVerified 仍为 false；此结果不是完整 baseline 或物理释放证明，没有延长 publication arm，也没有新增 publisher 许可、PUT 或线上验收。原 401 与 07:30 完整资源核验仍为各自历史记录；PUT 总数仍为 2，线上 ACC 为 0，M3/M4 未完成。
