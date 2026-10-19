@@ -1,0 +1,10 @@
+选定进度（全部为历史观察；整理时间不代表新鲜回执）
+
+Registry 两份固定镜像已完整 GET 读回：TrustedPi 59 次（2 manifest + 57 config/layer），ProjectTools 36 次（2 + 34）。镜像材料未形成部署或线上验收。
+两次记录的 Gateway PUT 均返回 HTTP 400；第二次明确为 10021。新 Gateway 成功 ACK、两 app rollout intent/ACK 均为 0。第二批已停止，未结束维护 hold，也未自动重试。
+随后两次只读尝试未完成：第一次停在既有 OAuth 有效期门禁，第二次在 postbaseline 等待超时；不将部分 GET 当成完整回读。再后的完整 GET 共核对 68 份原始捕获；逻辑资源八组比较仍相同，Gateway 仍为原版本及源码，两 app 版本未变。07:30:11.129Z 的回读为 hold5/quiet。
+07:30:16.731Z 的物理观察按纠错 v2：双端各有 1 个 placement，health=running、container=stopped、deploymentState=placed，terminate=false、fullyReleased=false。dash.instances=0 不证明 VM 消失；不能认定物理释放或费用为零。原错误解释保留为私有历史。
+三次本机启动诊断分别 exit71、exit1、exit0；最后一次 exact a558 源码在本机 workerd 通过。均无认证或云请求，未证明生产环境一致或 Cloudflare 10021 的原因。
+既有本地 PiWeb/riff-pi 为 6 次真实运行，插件测试 25/25；PR #2、#256 已合，main 2f588455… 与固定 package 0.3.1 / 45 files / 86b7a28a… 保持。Riffoid 线上 ACC-01～05 全部 pending、已完成 0；M3/M4 未完成。
+
+后来又直接批准了一个新单次窗口，并完成原范围的 OAuth routine；父命令获准时已过 09:30Z 最晚启动时刻，以 latest-approved-start-expired 在 arm 前停止。未创建运行或输出目录，collector/publisher 均未启动，操作端报告新浏览器 GET 为 0。此批没有新 PUT，总数仍为 2；未结束维护 hold，没有新增 quiescence 或物理状态回读。冻结记录时刻为 09:59:25.200837Z，不能把整理时间当成新鲜证据。线上 ACC 仍为 0，M3/M4 未完成。

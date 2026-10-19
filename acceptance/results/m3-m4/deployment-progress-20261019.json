@@ -1,0 +1,669 @@
+{
+  "artifactIdentity": {
+    "mergedMainCommit": "2f588455a13fea89b00c0a341540aa1e36e07f61",
+    "mergedMainTree": "13bceb3a2b43d55632ee15d4f0f1db885dc7c548",
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-main-GET-and-existing-package-evidence",
+      "observedAtUtc": "2026-10-19T03:53:00Z"
+    },
+    "packageFiles": 45,
+    "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+    "packageVersion": "0.3.1",
+    "sourceRefs": [
+      "mergedMainRead",
+      "mergedMainCommit",
+      "existingAcceptance",
+      "existingPluginPreparation"
+    ]
+  },
+  "earlierProtocolGet": {
+    "crossProcessPublisherExecutionProven": false,
+    "httpStatus": 200,
+    "logicalHoldRevision": 5,
+    "logicalQuiescent": true,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-observation",
+      "observedAtUtc": "2026-10-19T05:35:39.797Z"
+    },
+    "onlineAccProven": false,
+    "physicalReleaseProven": false,
+    "publicationProven": false,
+    "scope": "same-process-fresh-read-and-recheck-only",
+    "sourceRefs": [
+      "earlierProtocolGet"
+    ]
+  },
+  "existingLocalEvidence": {
+    "newRiffoidOnlineAcceptance": false,
+    "piWebAcc01To05": "passed-existing-local-evidence",
+    "piWebAndRiffPiRealUniqueRuns": 6,
+    "pluginTestObservation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-observation",
+      "observedAtUtc": "2026-10-18T16:22:04.617400+00:00"
+    },
+    "pluginTests": {
+      "failed": 0,
+      "passed": 25,
+      "tests": 25
+    },
+    "riffPi": "passed-existing-local-evidence",
+    "runObservation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-observation",
+      "observedAtUtc": "2026-10-18T17:02:58.653Z"
+    },
+    "sourceRefs": [
+      "existingPiManifest",
+      "existingPiValidation",
+      "existingPluginPreparation",
+      "existingPluginChecks",
+      "existingAcceptance"
+    ]
+  },
+  "gatewayAttempts": {
+    "appRolloutAckCount": 0,
+    "appRolloutIntentCount": 0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "httpStatus": 400,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-observation",
+          "observedAtUtc": "2026-10-19T05:01:41.422Z"
+        },
+        "rawResponseBodyIncluded": false,
+        "responseBodyBytes": 321,
+        "responseBodySha256": "aff5f6922ad14176a471fa96dca63264c46b53cc5c996f52905abf6f096c5bd3",
+        "sourceRefs": [
+          "gatewayFirstIntent",
+          "gatewayFirstResponse",
+          "gatewayFirstStopped"
+        ],
+        "specificErrorCode": null
+      },
+      {
+        "additionalDiagnosticRequests": 0,
+        "attempt": 2,
+        "httpStatus": 400,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-observation",
+          "observedAtUtc": "2026-10-19T06:59:49.324Z"
+        },
+        "rawResponseBodyIncluded": false,
+        "responseBodyBytes": 321,
+        "responseBodySha256": "aff5f6922ad14176a471fa96dca63264c46b53cc5c996f52905abf6f096c5bd3",
+        "sourceRefs": [
+          "gatewaySecondResponse",
+          "gatewaySecondBoundedDiagnostic",
+          "gatewaySecondSourceFreeze"
+        ],
+        "specificErrorCode": 10021
+      }
+    ],
+    "automaticRetry": false,
+    "putCount": 2,
+    "scope": "the-two-recorded-publication-attempts",
+    "successfulNewGatewayAckCount": 0
+  },
+  "laterApprovedBatchExpiredBeforeArm": {
+    "absoluteWindowCapUtc": "2026-10-19T10:00:00Z",
+    "approvalEvidence": {
+      "bytes": 950,
+      "sha256": "9a5ac8f488dbbce3d69b82acb8e97aa0014d9c88072002fe0c6daf52ce5c6a97"
+    },
+    "armCreated": false,
+    "authenticationRoutineObservation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-complete-safe-receipt-has-no-observation-timestamp",
+      "observedAtUtc": null
+    },
+    "automaticRetry": false,
+    "collectorStarted": false,
+    "humanApprovalReceived": true,
+    "humanApprovalRecordedAtUtc": "2026-10-19T08:59:30.378491+00:00",
+    "latestAllowedStartUtc": "2026-10-19T09:30:00Z",
+    "maintenanceEndPerformed": false,
+    "newBrowserGetsReportedByAssignedOperator": 0,
+    "newGatewayPutAttempts": 0,
+    "newQuiescenceOrPhysicalReadClaimed": false,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "actual-expired-before-arm-freeze-and-tool-exit",
+      "observedAtUtc": "2026-10-19T09:59:25.200837+00:00"
+    },
+    "originalAuthenticationRoutineCompleted": true,
+    "outputDirectoryCreated": false,
+    "parentExitCode": 1,
+    "parentStopCode": "latest-approved-start-expired",
+    "publisherStarted": false,
+    "recordedGatewayPutAttemptsStill": 2,
+    "riffoidOnlineAccCompleted": 0,
+    "runtimeDirectoryCreated": false,
+    "sourceGateEnabled": false,
+    "sourceRefs": [
+      "expiredBeforeArmFreeze",
+      "completedPriorAuthenticationRoutineSafe"
+    ],
+    "status": "approved-but-expired-before-arm"
+  },
+  "laterCompleteGetReconciliation": {
+    "allComparedResourceProjectionsIdentical": true,
+    "bothOriginalAppConfigurationsAndVersionsUnchanged": true,
+    "cloudWritesByThisReconciliation": 0,
+    "correctedEvidence": {
+      "bytes": 4608,
+      "sha256": "e9f50ae87aee483932d257c8817f90102f318dd399eed60779f4fb11194d076d"
+    },
+    "logicalHold": {
+      "maintenanceEndPerformed": false,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-observation",
+        "observedAtUtc": "2026-10-19T07:30:11.129Z"
+      },
+      "quiescent": true,
+      "revision": 5
+    },
+    "nativeCaptureEndedAtUtc": "2026-10-19T07:30:16.731Z",
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-native-GET-with-corrected-offline-projection",
+      "observedAtUtc": "2026-10-19T07:30:16.731Z"
+    },
+    "operatorReceiptActualContainerReleaseVerified": false,
+    "physicalObservationUsesCorrectedV2Only": true,
+    "physicalObservations": [
+      {
+        "applicationVersion": 3,
+        "containerStatus": "stopped",
+        "currentPlacementHealth": "running",
+        "dashInstancesCount": 0,
+        "dashInstancesCountProvesVmAbsent": false,
+        "deploymentListAndDetailAgree": true,
+        "deploymentState": "placed",
+        "fullyReleased": false,
+        "legacyInactiveRowCount": 10,
+        "placementCountObserved": 1,
+        "role": "project-tools",
+        "terminate": false,
+        "v2InactiveRowCount": 10
+      },
+      {
+        "applicationVersion": 13,
+        "containerStatus": "stopped",
+        "currentPlacementHealth": "running",
+        "dashInstancesCount": 0,
+        "dashInstancesCountProvesVmAbsent": false,
+        "deploymentListAndDetailAgree": true,
+        "deploymentState": "placed",
+        "fullyReleased": false,
+        "legacyInactiveRowCount": 10,
+        "placementCountObserved": 1,
+        "role": "trusted-pi",
+        "terminate": false,
+        "v2InactiveRowCount": 10
+      }
+    ],
+    "physicalReleaseProven": false,
+    "priorIncompletePhysicalInterpretationPreservedPrivately": true,
+    "rawGetCaptureBytesVerified": 6216425,
+    "rawGetCapturesVerified": 68,
+    "resourceProjectionExactComparisons": {
+      "activeServingAnchorExceptObservationTime": true,
+      "appVersions": true,
+      "apps": true,
+      "controls": true,
+      "source": true,
+      "version": true,
+      "workerVersionDetails": true,
+      "workerVersions": true
+    },
+    "scope": "historical-complete-get-only-and-offline-comparison",
+    "servingGatewaySource": {
+      "bytes": 5774988,
+      "mainModule": "index.js",
+      "sha256": "304373a50d7a9ca8a99cdfbda0dcae261aa34d53727b757dfeb099c88efb5e0b"
+    },
+    "servingGatewayVersionNumber": 236,
+    "snapshotEndedAtUtc": "2026-10-19T07:29:51.052Z",
+    "snapshotStartedAtUtc": "2026-10-19T07:29:10.439Z",
+    "sourceRefs": [
+      "completedGetBootstrapSafe"
+    ],
+    "zeroCostProven": false
+  },
+  "latestRecordedPublicationBatch": {
+    "automaticRetry": false,
+    "collectorExitCode": 0,
+    "maintenanceEndPerformed": false,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-observation",
+      "observedAtUtc": "2026-10-19T06:59:49.407Z"
+    },
+    "originalCollectorAndPublisherProcessGroupsConfirmedGone": true,
+    "parentStopCode": "native-child-stopped-retain-identity",
+    "publisherExitCode": 1,
+    "sourceGatesClosed": true,
+    "sourceRefs": [
+      "secondBatchWindow",
+      "secondBatchCollectorTerminal",
+      "secondBatchPublisherTerminal",
+      "secondBatchParentTerminal",
+      "gatewaySecondSourceFreeze"
+    ],
+    "status": "collector-completed-publisher-put-rejected",
+    "windowApproval": "received-for-this-recorded-window",
+    "windowEndsAtUtc": "2026-10-19T07:23:25.345Z",
+    "windowStartedAtUtc": "2026-10-19T06:53:25.345Z"
+  },
+  "localStartupDiagnostics": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "authenticationLoaded": false,
+        "cloudRequests": 0,
+        "exitCode": 71,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-local-terminal-has-no-timestamp",
+          "observedAtUtc": null
+        },
+        "onlineAcceptanceProven": false,
+        "originalBundleBytesChanged": false,
+        "originalProcessGroupGone": true,
+        "processReaped": true,
+        "productionErrorCauseProven": false,
+        "sourceRefs": [
+          "localProbe1Manifest",
+          "localProbe1Terminal"
+        ],
+        "status": "stopped-locally"
+      },
+      {
+        "attempt": 2,
+        "authenticationLoaded": false,
+        "cloudRequests": 0,
+        "exitCode": 1,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-local-terminal-has-no-timestamp",
+          "observedAtUtc": null
+        },
+        "onlineAcceptanceProven": false,
+        "originalBundleBytesChanged": false,
+        "originalProcessGroupGone": true,
+        "processReaped": true,
+        "productionErrorCauseProven": false,
+        "sourceRefs": [
+          "localProbe2Manifest",
+          "localProbe2Terminal"
+        ],
+        "status": "stopped-locally"
+      },
+      {
+        "attempt": 3,
+        "authenticationLoaded": false,
+        "cloudRequests": 0,
+        "exitCode": 0,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-local-terminal-has-no-timestamp",
+          "observedAtUtc": null
+        },
+        "onlineAcceptanceProven": false,
+        "originalBundleBytesChanged": false,
+        "originalProcessGroupGone": true,
+        "processReaped": true,
+        "productionErrorCauseProven": false,
+        "sourceRefs": [
+          "localProbe3Manifest",
+          "localProbe3Terminal"
+        ],
+        "status": "passed-locally"
+      }
+    ],
+    "cloudStartupErrorCauseProven": false,
+    "localRuntimeVersion": "1.20260903.1",
+    "passedBundleBytes": 5874812,
+    "passedBundleSha256": "a558cbfecab0c09fa8237e421af0f8333fc5e589a9b6775bc19c50eadb995f02",
+    "productionDeploymentProven": false,
+    "productionEnvironmentParityProven": false,
+    "riffoidOnlineAccCompleted": 0,
+    "scope": "local-workerd-without-production-bindings-or-network",
+    "targetCompatibilityDate": "2026-09-09"
+  },
+  "milestonesComplete": {
+    "M3": false,
+    "M4": false
+  },
+  "preparationCreatesNoNewRuntimeObservation": true,
+  "preparedAtUtc": "2026-10-19T10:04:07.411726+00:00",
+  "recordedDeploymentAndAcceptance": {
+    "newSuccessfulGatewayAckCount": 0,
+    "observation": {
+      "freshnessClaimed": false,
+      "historical": true,
+      "observationKind": "original-observation",
+      "observedAtUtc": "2026-10-19T07:30:16.731Z"
+    },
+    "originalAppRolloutAckCount": 0,
+    "originalAppRolloutIntentCount": 0,
+    "riffoidAcc": {
+      "ACC-01": "pending",
+      "ACC-02": "pending",
+      "ACC-03": "pending",
+      "ACC-04": "pending",
+      "ACC-05": "pending"
+    },
+    "riffoidOnlineAccCompleted": 0,
+    "scope": "selected-records-through-the-historical-reconciliation",
+    "sourceRefs": [
+      "gatewaySecondSourceFreeze",
+      "existingAcceptance",
+      "completedGetBootstrapSafe"
+    ]
+  },
+  "registry": {
+    "deploymentClaim": false,
+    "images": [
+      {
+        "deploymentAccepted": false,
+        "fullGetReadbackPassed": true,
+        "manifestGetCount": 2,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-terminal-has-no-observation-timestamp",
+          "observedAtUtc": null
+        },
+        "onlineAcceptancePassed": false,
+        "ownerReceiptSealedAtUtc": "2026-10-19T04:13:03.699673+00:00",
+        "role": "project-tools",
+        "rootManifestDigest": "sha256:402381b5b2c0f460e6af44bc4e953d53f6bdb648de4c9ccbeee837815580cd8f",
+        "sourceRefs": [
+          "registryBinding",
+          "registry-project-tools"
+        ],
+        "totalGetCount": 36,
+        "uniqueConfigAndLayerGetCount": 34
+      },
+      {
+        "deploymentAccepted": false,
+        "fullGetReadbackPassed": true,
+        "manifestGetCount": 2,
+        "observation": {
+          "freshnessClaimed": false,
+          "historical": true,
+          "observationKind": "original-terminal-has-no-observation-timestamp",
+          "observedAtUtc": null
+        },
+        "onlineAcceptancePassed": false,
+        "ownerReceiptSealedAtUtc": "2026-10-19T04:13:03.699673+00:00",
+        "role": "trusted-pi",
+        "rootManifestDigest": "sha256:dcd4a5fc6f02c9d0ee1290e07c268a8dba4aba1790e75b98c5f7bb83792da487",
+        "sourceRefs": [
+          "registryBinding",
+          "registry-trusted-pi"
+        ],
+        "totalGetCount": 59,
+        "uniqueConfigAndLayerGetCount": 57
+      }
+    ],
+    "riffoidAcceptanceClaim": false,
+    "status": "two-fixed-artifacts-uploaded-and-fully-read-back"
+  },
+  "schema": "riffoid-ir.selected-publication-progress/v3",
+  "sourceFiles": {
+    "completedGetBootstrapSafe": {
+      "basename": "bootstrap-physical.safe.json",
+      "bytes": 1919,
+      "sha256": "d62bed8507ce5e7a6a4f9156753f3563459e991247bfaf6d791d2f7a2691f34f"
+    },
+    "completedPriorAuthenticationRoutineSafe": {
+      "basename": "original-refresh-complete.safe.json",
+      "bytes": 812,
+      "sha256": "aa4b9a9ae9e273322737b973dbff29b25e74dfcb0e6f456eee3843927db7051d"
+    },
+    "earlierProtocolGet": {
+      "basename": "riffoid-ir-on-demand-protocol-read-20261019.safe.json",
+      "bytes": 955,
+      "sha256": "6e590a2fb093da4b705f366537cbb40f16071b7ef6b055ae551f80253145bcb0"
+    },
+    "existingAcceptance": {
+      "basename": "acceptance.json",
+      "bytes": 5035,
+      "sha256": "0abae1e405a4ecf3efa204c008eb7214ba3509a2210016fa0350aacece5cc75c"
+    },
+    "existingPiManifest": {
+      "basename": "manifest.json",
+      "bytes": 17125,
+      "sha256": "07be3b7df9618e0f048420af8b9f0a58b1094bc545b1853744315a0a6ab9d113"
+    },
+    "existingPiValidation": {
+      "basename": "validation.json",
+      "bytes": 634,
+      "sha256": "7cf1620f3f6a4182c8aa734028d9272602f0ebe51a357ddd9647dc0ab66b4e34"
+    },
+    "existingPluginChecks": {
+      "basename": "plugin-check.txt",
+      "bytes": 2961,
+      "sha256": "1fed09a8a41c7599b99485d45058504f0ad4b24fcc61b94159247ebc2085d9d6"
+    },
+    "existingPluginPreparation": {
+      "basename": "preparation.json",
+      "bytes": 1446,
+      "sha256": "012c8b02203d41f4026039a029b80691c2ccd7e5a3b7c4b4187612383e273319"
+    },
+    "existingSourcePublication": {
+      "basename": "riffoid-ir-source-publication-20261019.safe.json",
+      "bytes": 1669,
+      "sha256": "eb8219b598554e88114bd88fe444fd5a72677dad29ef3a87025455efda09eadf"
+    },
+    "expiredBeforeArmFreeze": {
+      "basename": "freeze.safe.json",
+      "bytes": 1483,
+      "sha256": "1ecf905541e18b412ba347d22f39abfab0fb2cb6ecf490899bf7387ba74c3ea7"
+    },
+    "first-subsequent-read-only-attemptStopped": {
+      "basename": "owner-wiring-stopped.safe.json",
+      "bytes": 334,
+      "sha256": "3216f10b0a4145e9cb2b7acf99ad82348273d627840780bdd5eec74f35ebbbc1"
+    },
+    "gatewayFirstIntent": {
+      "basename": "worker-put-intent.safe.json",
+      "bytes": 585,
+      "sha256": "161a66218deff8c1964ffb07630b5af6514af7eeeec710ae67fa0d6804a7bd05"
+    },
+    "gatewayFirstResponse": {
+      "basename": "worker-put-response.safe.json",
+      "bytes": 410,
+      "sha256": "094e6d88198c0aadfe113cf1a8b7bb816ce138c88ec38ef210c237a13aa73083"
+    },
+    "gatewayFirstStopped": {
+      "basename": "worker-put-stopped.safe.json",
+      "bytes": 369,
+      "sha256": "45b21a33d48774143b1c9cd27074cfdd3c2e8a62d106be7bb0b8f7b472dd7801"
+    },
+    "gatewaySecondBoundedDiagnostic": {
+      "basename": "worker-put-error-diagnostic.safe.json",
+      "bytes": 706,
+      "sha256": "2a78933a4c01c39630c1cd52bad61340619105703bdf74e3291e8dc4896960cd"
+    },
+    "gatewaySecondResponse": {
+      "basename": "worker-put-response.safe.json",
+      "bytes": 410,
+      "sha256": "90df6aaf799b8ff42ba16f25dd4cf9274830bcda72abf5fcd61be9ae98ee407c"
+    },
+    "gatewaySecondSourceFreeze": {
+      "basename": "freeze.safe.json",
+      "bytes": 1099,
+      "sha256": "4494ebe3919fdcadedcd23061adbc2ab743000d13a890be29a9f418aab937942"
+    },
+    "localProbe1Manifest": {
+      "basename": "review-manifest.json",
+      "bytes": 1644,
+      "sha256": "90be9a3e8fc0a7e9521af86f51b3c824241d8a06174ed1089f10186a99c0bbd9"
+    },
+    "localProbe1Terminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 892,
+      "sha256": "8823d072db5fbd9e45e78998e479a1665fe1d5c3231399fab0ba0275d54bb68b"
+    },
+    "localProbe2Manifest": {
+      "basename": "review-manifest.json",
+      "bytes": 1644,
+      "sha256": "90be9a3e8fc0a7e9521af86f51b3c824241d8a06174ed1089f10186a99c0bbd9"
+    },
+    "localProbe2Terminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 912,
+      "sha256": "fa8604b1670e659cd05a75ee635d55815de99a1c57e5ed4ef8c4ad3397c5c217"
+    },
+    "localProbe3Manifest": {
+      "basename": "review-manifest.json",
+      "bytes": 1936,
+      "sha256": "89db1eacb0cf02153d5c19566d27f37a6f494442380223eabc04f6d17e29d37e"
+    },
+    "localProbe3Terminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 919,
+      "sha256": "09bbefbcb8109d492b48faa318b5e6e97854a87e871f5ab927524cc219170407"
+    },
+    "mergedMainCommit": {
+      "basename": "github-commit.original.json",
+      "bytes": 2710,
+      "sha256": "c4792ddffc7bcf76d5dfff4d390267b4ab338f7b1019ef1f550b27db3826533b"
+    },
+    "mergedMainRead": {
+      "basename": "main-read.safe.json",
+      "bytes": 807,
+      "sha256": "71ee625825178a86a8b6cd6da42b73d161b91b8fbfbd90d2a67d8b49f55de363"
+    },
+    "registry-project-tools": {
+      "basename": "terminal.safe.json",
+      "bytes": 9176,
+      "sha256": "206112ce3daceebf70cadf187329b7876b876334f9fa0b25a0e8215f4e765b22"
+    },
+    "registry-trusted-pi": {
+      "basename": "terminal.safe.json",
+      "bytes": 13982,
+      "sha256": "24606befe4ab3741f8d1dbcf7d87a46f2b8d465ce374b0bac3d83a2e9933dbf4"
+    },
+    "registryBinding": {
+      "basename": "owner-bindings.mjs",
+      "bytes": 10095,
+      "sha256": "914ad439d74d3551436308bc894e515b92744c157313017c0fe9828f5a1569cb"
+    },
+    "second-subsequent-read-only-attemptStopped": {
+      "basename": "owner-wiring-stopped.safe.json",
+      "bytes": 298,
+      "sha256": "329f49f7a7041bc4cbf20917ce35d69bf6f641d59ae60dda2a5eec683a88856e"
+    },
+    "secondBatchCollectorTerminal": {
+      "basename": "collect-terminal.safe.json",
+      "bytes": 646,
+      "sha256": "e430acd2e28e9f987c01ba4eff3d52e454552d245b1d94a73d74a8273f203f8d"
+    },
+    "secondBatchParentTerminal": {
+      "basename": "terminal.safe.json",
+      "bytes": 508,
+      "sha256": "6d3e5c92822d9dc3632883b14d96e5584df722c2773a88a95b20a84ed8f7ff32"
+    },
+    "secondBatchPublisherTerminal": {
+      "basename": "execute-terminal.safe.json",
+      "bytes": 584,
+      "sha256": "ed6c9d40b49985b7056222138d2f1d4d31a8ebb2141460b4474e86e0d01e2615"
+    },
+    "secondBatchWindow": {
+      "basename": "arm.safe.json",
+      "bytes": 770,
+      "sha256": "514010f75d999d873a4285acb36e10e47f5d5e7f77c0899a3466429e884e2e33"
+    }
+  },
+  "sourcePullRequests": [
+    {
+      "merged": true,
+      "number": 2,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "existing-source-publication-receipt-no-timestamp",
+        "observedAtUtc": null
+      },
+      "repositoryRole": "plugin",
+      "sourceRefs": [
+        "existingSourcePublication"
+      ]
+    },
+    {
+      "merged": true,
+      "number": 256,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-main-commit-GET",
+        "observedAtUtc": "2026-10-19T03:53:00Z"
+      },
+      "repositoryRole": "host",
+      "sourceRefs": [
+        "mergedMainRead",
+        "mergedMainCommit"
+      ]
+    }
+  ],
+  "status": "deployment-and-online-acceptance-incomplete",
+  "subsequentReadOnlyAttempts": [
+    {
+      "attempt": "first-subsequent-read-only-attempt",
+      "completion": false,
+      "nativeCompleteReceiptPresent": false,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-stopped-receipt-has-no-timestamp",
+        "observedAtUtc": null
+      },
+      "rawGetCaptureCount": 0,
+      "sourceRefs": [
+        "first-subsequent-read-only-attemptStopped"
+      ],
+      "stopCode": "existing-oauth-valid-through-bounded-attempt-no-refresh"
+    },
+    {
+      "attempt": "second-subsequent-read-only-attempt",
+      "completion": false,
+      "nativeCompleteReceiptPresent": false,
+      "observation": {
+        "freshnessClaimed": false,
+        "historical": true,
+        "observationKind": "original-stopped-receipt-has-no-timestamp",
+        "observedAtUtc": null
+      },
+      "rawGetCaptureCount": 53,
+      "sourceRefs": [
+        "second-subsequent-read-only-attemptStopped"
+      ],
+      "stopCode": "hard-request-timeout"
+    }
+  ]
+}
