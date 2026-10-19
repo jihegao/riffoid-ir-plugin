@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "diagnostics": [
+    {
+      "code": "invalid_json",
+      "stage": "load",
+      "path": "<EXTERNAL_TEST_ROOT>/workspaces/pi-web-acceptance/model/business-ir.draft.json",
+      "line": 2,
+      "column": 13,
+      "message": "Expecting value"
+    }
+  ]
+}

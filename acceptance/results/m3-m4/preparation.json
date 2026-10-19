@@ -1,0 +1,45 @@
+{
+  "schema": "riffoid-ir.acceptance-evidence/v1",
+  "recordedAt": "2026-10-18T16:22:04.617400+00:00",
+  "contractCommit": "f1f6762e774b5eba63b788a2baacde56d491c0fe",
+  "pluginVersion": "0.3.1",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "reproduciblePack": {
+    "byteIdentical": true,
+    "fileCount": 45
+  },
+  "compiler": {
+    "version": "0.1.0",
+    "wheelSha256": "e7bcd9271dd42106b78e87176e3485b290536f5291c0440872b814fc549858f7"
+  },
+  "browserRuntime": {
+    "version": "aircraft-support-browser/0.3.0",
+    "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef"
+  },
+  "pluginChecks": {
+    "tests": 25,
+    "passed": 25,
+    "failed": 0,
+    "log": "plugin-check.txt",
+    "sha256": "1fed09a8a41c7599b99485d45058504f0ad4b24fcc61b94159247ebc2085d9d6"
+  },
+  "actualAcceptance": {
+    "piWeb": {
+      "ACC-01": "pending",
+      "ACC-02": "pending",
+      "ACC-03": "pending",
+      "ACC-04": "pending",
+      "ACC-05": "pending"
+    },
+    "riffoidOnline": {
+      "ACC-01": "pending",
+      "ACC-02": "pending",
+      "ACC-03": "pending",
+      "ACC-04": "pending",
+      "ACC-05": "pending"
+    }
+  },
+  "deployment": null,
+  "hostIssue": "https://github.com/jihegao/riffology-cloud/issues/254",
+  "evidenceBoundary": "Package and offline checks only. No candidate Agent prompt, provider request, production deployment or online ACC is claimed by this snapshot."
+}

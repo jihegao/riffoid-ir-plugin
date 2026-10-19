@@ -1,0 +1,30 @@
+
+> riffoid-ir-plugin@0.3.0 check
+> node scripts/check.mjs && node --test tests/*.test.mjs
+
+JavaScript sources checked; the package ships native ES modules without a bundling step.
+✔ loopback broker enforces token, origin and workspace boundaries and serves the real browser assets (129.909459ms)
+✔ session-owned broker is shared and closes only after the last session releases it (94.067041ms)
+✔ real SDK compilation, B1 and +5 variant agree with fixed expectations and independent Python reference (587.52925ms)
+✔ serial durations, cancellation and overlapping preparation consume the compiled Plan (982.576291ms)
+✔ capability gaps reject unsupported profiles, failures, transport and unknown phase ordering (149.463459ms)
+✔ multi-day and flight-exposure repair match the independent reference; missing repair stays diagnosed (851.839333ms)
+✔ a loaded extension adopts its replacement workspace broker before dispatch without duplicate operations (20.408375ms)
+✔ public PI WEB API v4 contribution renders the selected workspace and opens its qualified panel (1.757ms)
+✔ Riffoid uses the same tools/runtime, host authorization and existing project.views manifest (128.276209ms)
+✔ JSON diagnostics locate a syntax error; repair can continue through real compilation (322.827792ms)
+✔ mode defaults persist without creating/converting models (315.020125ms)
+✔ frozen artifacts and inputs survive edits, reopen, and sourceRunId replay (388.667042ms)
+✔ missing browser, invalid options, lease loss and failed persistence never report successful execution (176.501833ms)
+✔ content references reject tampering and workspace symlink escapes (171.52725ms)
+✔ browser acceptance defaults outside the repository and rejects source-tree and symlink targets (4.099625ms)
+✔ acceptance restores current model bytes and removes only files absent before the test (5.660542ms)
+✔ evidence export selects accepted files, records hashes, and excludes credentials, raw logs and model backups (10.141875ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1828.995875

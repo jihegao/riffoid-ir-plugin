@@ -1,0 +1,25 @@
+
+> riffoid-ir-plugin@0.2.0 check
+> node scripts/check.mjs && node --test tests/*.test.mjs
+
+JavaScript sources checked; the package ships native ES modules without a bundling step.
+✔ loopback broker enforces token, origin and workspace boundaries and serves the real browser assets (103.542666ms)
+✔ session-owned broker is shared and closes only after the last session releases it (84.262542ms)
+✔ real SDK compilation, B1 and +5 variant agree with fixed expectations and independent Python reference (521.496166ms)
+✔ serial durations, cancellation and overlapping preparation consume the compiled Plan (971.881375ms)
+✔ capability gaps reject unsupported profiles, failures, transport and unknown phase ordering (154.158584ms)
+✔ public PI WEB API v4 contribution renders the selected workspace and opens its qualified panel (1.797ms)
+✔ Riffoid uses the same tools/runtime, host authorization and existing project.views manifest (96.316208ms)
+✔ JSON diagnostics locate a syntax error; repair can continue through real compilation (272.662625ms)
+✔ mode defaults persist without creating/converting models (297.706916ms)
+✔ frozen artifacts and inputs survive edits, reopen, and sourceRunId replay (365.873541ms)
+✔ missing browser, invalid options, lease loss and failed persistence never report successful execution (179.99725ms)
+✔ content references reject tampering and workspace symlink escapes (176.900667ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1735.455333

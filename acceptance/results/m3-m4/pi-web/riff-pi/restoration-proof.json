@@ -1,0 +1,108 @@
+{
+  "schema": "riffoid-ir.riff-pi-restoration-proof/v1",
+  "observedAt": "2026-10-18T16:52:25.285Z",
+  "status": "passed",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "packageFilesStillExact": true,
+  "modelFiles": [
+    {
+      "path": "model/business-ir.draft.json",
+      "exists": true,
+      "bytes": 4509,
+      "sha256": "7b6ed5ca517ac602ad631b4d642b6df6a8be9939d081cd13c8eb58e63a762173"
+    },
+    {
+      "path": "model/business-ir.json",
+      "exists": true,
+      "bytes": 8811,
+      "sha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad"
+    },
+    {
+      "path": "model/model.simpack",
+      "exists": true,
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d"
+    },
+    {
+      "path": "model/browser-artifact.json",
+      "exists": true,
+      "bytes": 130,
+      "sha256": "626bdaf691e516807c5f88d943519c674795ac54828eaabd46caca0e5168ebb8"
+    },
+    {
+      "path": "model/model-spec.json",
+      "exists": true,
+      "bytes": 986,
+      "sha256": "e78ce7b3913b1dc082ac3072d270c7f67c5f1059f2149eb2ade312dc3c762dd2"
+    }
+  ],
+  "oldNaturalRunsUnchanged": [
+    {
+      "runId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "directorySha256": "9e1185813fefb89e92daeda2f2e5d02697af9c316cc0f28cf599376654a2d5d8",
+      "exactPriorDirectoryMatch": true
+    },
+    {
+      "runId": "run-7dec298a-3e1b-4668-a11d-9c23fc61ce63",
+      "directorySha256": "19cb04e4d0ccac1ac5ee777be80271982ba32e3411acfb2f9bf6cf67f23e40e6",
+      "exactPriorDirectoryMatch": true
+    },
+    {
+      "runId": "run-638cc2b8-6ba6-4c72-8bc9-994814b3866d",
+      "directorySha256": "b4c07a3e92ddc0d172f40ce2213d75843fc1ead9d41d96e1e51d706a8834d1db",
+      "exactPriorDirectoryMatch": true
+    }
+  ],
+  "sessionsUnchanged": [
+    {
+      "sessionId": "01a14fd5-6349-7618-a462-89d86b2bffdd",
+      "sha256": "62ea6e51b5abd98c5ef6682474ba1a71553167422db3e3b67b6fd0b5c39f42af",
+      "exactPriorBytesMatch": true
+    },
+    {
+      "sessionId": "01a14fe4-5cc4-7618-a462-89db0a751fed",
+      "sha256": "6db3ef3cfa5d761af8b44a7e975fa4af81f287bc653633d9fd999b94872f6ec2",
+      "exactPriorBytesMatch": true
+    }
+  ],
+  "riffPiRuns": [
+    {
+      "runId": "run-ffd4d512-9820-43db-82b0-c1080ccbaabd",
+      "status": "succeeded",
+      "recordSha256": "1fcd1b8f5f2fb4974ccc773aa4e093d49847f660d4d2f0a0e8b53b5c48e7f695",
+      "execution": {
+        "location": "user-browser",
+        "host": "pi-web",
+        "runtimeVersion": "aircraft-support-browser/0.3.0",
+        "verification": "local-unverified"
+      },
+      "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6"
+    },
+    {
+      "runId": "run-a58c2bdf-7400-443a-95b0-c632a049b530",
+      "status": "succeeded",
+      "recordSha256": "998f0cf30f4f20805874dabf94f1986659ff501a55e9ead55eb8a7a53480a933",
+      "execution": {
+        "location": "user-browser",
+        "host": "pi-web",
+        "runtimeVersion": "aircraft-support-browser/0.3.0",
+        "verification": "local-unverified"
+      },
+      "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6"
+    },
+    {
+      "runId": "run-c6350d81-7379-4543-b9a0-d7e9778193b2",
+      "sourceRunId": "run-ffd4d512-9820-43db-82b0-c1080ccbaabd",
+      "status": "succeeded",
+      "recordSha256": "930ab24c386ba77f0527cc154291b1a981818e0d9df7ce988591c5df953439d6",
+      "execution": {
+        "location": "user-browser",
+        "host": "pi-web",
+        "runtimeVersion": "aircraft-support-browser/0.3.0",
+        "verification": "local-unverified"
+      },
+      "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6"
+    }
+  ],
+  "method": "Readonly byte comparison after the single authorized real Direct Browser acceptance script. No rerun or model call."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "riffoid-ir.publication-evidence-review/v1",
+  "reviewedAt": "2026-10-18T16:34:48.728065+00:00",
+  "destination": [
+    "https://github.com/jihegao/riffoid-ir-plugin",
+    "https://github.com/jihegao/riffology-cloud"
+  ],
+  "sessionExcerpts": [
+    {
+      "path": "acceptance/results/pi-web/agent-session.json",
+      "sourceBytes": 207035,
+      "sourceSha256": "d1504ee9fb88dec9718cbf7f25608eff3958a0a1380f56cde4a245313ef3dcea",
+      "publicBytes": 89141,
+      "publicSha256": "ccba07360def887ec94665c56fe8c04bfa69eda9f2b3cf291b8d2647e3d82691",
+      "sourceEntries": 52,
+      "selectedEntries": 34
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/conversation.json",
+      "sourceBytes": 126050,
+      "sourceSha256": "3e252410f16763e5a8db3ec285cec2f6b5296e9af15d801b59da662d34202fb3",
+      "publicBytes": 7765,
+      "publicSha256": "9924032271da1c05eaa33f63196ce186b2ff16e481a6e9c5d356ea433e2345b0",
+      "sourceEntries": 41,
+      "selectedEntries": 6
+    }
+  ],
+  "omittedFields": [
+    "thinking",
+    "thinkingSignature",
+    "textSignature",
+    "encrypted_content",
+    "provider-internal IDs",
+    "read/bash output bodies"
+  ],
+  "screenshots": {
+    "pi-web/riff-pi-preview.png": "Synthetic B1 model studio only.",
+    "pi-web/domain-development/pi-diagnosis.jpg": "Historical IR diagnosis; public account name/local paths, model name and displayed usage/cost.",
+    "pi-web/workspace-migration-20261018/workspace-migration.jpg": "Historical B1 model studio; public account local home path, unrelated local project label and displayed usage/cost."
+  },
+  "limitation": "Review used structural allowlists, source hashes and credential/connection-value checks. The original raw files remain local; public derivatives and exclusions are listed in public-redaction-manifest.json and pi-web/manifest.json.",
+  "cleanHistoryCheck": {
+    "rawConversationBlobsReachable": false,
+    "previousRawCommitsReachable": false,
+    "publicBranchBase": "f1f6762e774b5eba63b788a2baacde56d491c0fe"
+  },
+  "publicationDecision": "Human approved source and redacted JSON/text only. All screenshots and generated binary artifacts remain local."
+}

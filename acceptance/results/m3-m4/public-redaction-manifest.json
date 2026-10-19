@@ -1,0 +1,138 @@
+{
+  "schema": "riffoid-ir.public-redaction-manifest/v1",
+  "recordedAt": "2026-10-18T16:56:55.151248+00:00",
+  "humanPublicationScope": "Source and redacted JSON/text only; historical screenshots remain local. Generated simpack binaries also remain local.",
+  "binaryArtifactsRetainedLocally": [
+    {
+      "path": "acceptance/results/pi-web/baseline-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/browser-regression/baseline-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/browser-regression/replay-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/browser-regression/variant-model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/pi-diagnosis.jpg",
+      "bytes": 145885,
+      "sha256": "958c2b46ec0e43a329610777060a31a612b915388f71c2ee66fcaea24dc4514f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/replay-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/riff-pi-preview.png",
+      "bytes": 138047,
+      "sha256": "bf493a2df15fd28cc995477e14c761650fb68ef602687471e60ae7a754537244",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/variant-model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/baseline-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/replay-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/variant-model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "retained": "local-only, excluded from public commit"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/workspace-migration.jpg",
+      "bytes": 138847,
+      "sha256": "4afdcd1615573d84a76cde7add0b78af52108bf25ddc32281f7b18446cf1e4ac",
+      "retained": "local-only, excluded from public commit"
+    }
+  ],
+  "pathRedactions": [
+    {
+      "path": "acceptance/results/pi-web/syntax-diagnostic.json",
+      "originalBytes": 270,
+      "originalSha256": "b795f2b5d5e4553b6daa4cbdb22da45833d328128d89ad355b3c8da70637a94c",
+      "publicBytes": 248,
+      "publicSha256": "89b1d9b86bd635a37f53ac01f077da0cbc1b09cd76f0faeb4de660c1cfedf0ec"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/package-smoke.json",
+      "originalBytes": 643,
+      "originalSha256": "ece87a26cb1808d59d3ecd01e78a7aa2ffbb6bb7b14df3fc26f40cbca2242f43",
+      "publicBytes": 639,
+      "publicSha256": "a4aa490721cb9ef93c59f592be93b26896a93241055c1832363560b921e149e0"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/riff-pi-output.txt",
+      "originalBytes": 417,
+      "originalSha256": "c448688c01f8fcd752ebe6ff4bb784d720b7d00a47bc90792ea24f6c3bb2441f",
+      "publicBytes": 395,
+      "publicSha256": "e7ca86b4e30cc4d63397a825fa8b2e1702524ab57be355678b102689fdf433f9"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/summary.json",
+      "originalBytes": 3878,
+      "originalSha256": "d3c4ee7ef3ee3ad222aadce4d42791504692bfa0676a4ad7647d854c0a4c8ab0",
+      "publicBytes": 3853,
+      "publicSha256": "5681d00c20316b4585f5340e274f7b2a1f39abf4bd0b61541d6dd760642ba5f8"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/syntax-diagnostic.json",
+      "originalBytes": 307,
+      "originalSha256": "bb6740a80bcfa4af453f0776b73731afc1fe7d2ddace984567a0a1a367400bea",
+      "publicBytes": 282,
+      "publicSha256": "d042b80bc60dc0512051c16f3bfbd99ee100cead0dae337fb4d54fe4e9441a23"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/evidence-manifest.json",
+      "originalBytes": 4989,
+      "originalSha256": "17cc7f5b584d3b30c5e631c329d34a193840047f8585cd52543fc228eb227b9b",
+      "publicBytes": 4964,
+      "publicSha256": "b7ab9815bd7f8b08fab1c8d769a0d9ad1608d3e59a0de0d590efc3bcb046d3b1"
+    },
+    {
+      "path": "acceptance/results/pi-web/workspace-migration-20261018/workspace-migration.json",
+      "originalBytes": 3101,
+      "originalSha256": "7038e9cefd72f163978b32e93a17233500279125ca654e65d00e71d8fb7dcc0b",
+      "publicBytes": 3002,
+      "publicSha256": "597fa9aa698ff6aea7fdadf1a1637a143152dad8cf956e873e006f956fdff12f"
+    },
+    {
+      "path": "acceptance/results/pi-web/domain-development/browser-regression/syntax-diagnostic.json",
+      "originalBytes": 270,
+      "originalSha256": "b795f2b5d5e4553b6daa4cbdb22da45833d328128d89ad355b3c8da70637a94c",
+      "publicBytes": 248,
+      "publicSha256": "89b1d9b86bd635a37f53ac01f077da0cbc1b09cd76f0faeb4de660c1cfedf0ec"
+    }
+  ],
+  "frozenContent": "Business/Plan/runtime source bytes, runIds, content-addressed references and fingerprints are preserved. Historical export manifests bind original local bytes; this manifest maps redacted public derivatives to those originals."
+}
