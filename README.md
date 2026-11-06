@@ -82,7 +82,8 @@ npm run acceptance:export -- --from /absolute/external/results-directory
 
 ## 文档
 
-- [复杂系统建模与仿真白皮书（中文精炼版）](复杂系统建模与仿真白皮书_精炼版_中文.md)：多层 IR 架构、人机协作建模、编译与实验追溯，以及领域能力扩展。
-- [Riffoid 多层 IR Plugin 使用指南 v0.1](riffoid-ir-plugin-usage-guide-v0.1.md)：工作模式、领域包、模型校验与编译、实验运行、追溯，以及宿主接入与验收。
-- [Riffoid IR Plugin 文档评审意见 v0.1](riffoid-ir-plugin-review-v0.1.md)：对上述两份文档的评审意见与核查依据。
-- [Riffoid 多层 IR Plugin 功能需求 v0.1](riffoid-ir-plugin-functional-requirements-v0.1.md)：按评审意见整理的 v0.1 功能需求、宿主约束、验收用例与待决事项；与使用指南冲突时以本文为准。
+- [功能需求与开发合同 v0.2](docs/functional-requirements-v0.2.md)：首版功能范围、四个工具、双宿主接入和验收要求。
+- [建模字段](docs/model-fields.md)、[领域包开发](docs/domain-development.md)：当前输入与能力说明。
+- [Riffoid 接入说明](docs/riffoid-integration.md)、[验收记录](docs/acceptance.md)：接入方式及实际验证边界。
+- [复杂系统建模与仿真白皮书（中文精炼版）](复杂系统建模与仿真白皮书_精炼版_中文.md)：长期架构与领域扩展方向。
+- [v0.1 使用指南说明](riffoid-ir-plugin-usage-guide-v0.1.md)：指向[历史原稿](docs/history/riffoid-ir-plugin-usage-guide-v0.1.md)；其中的 `/model`、任务级偏好、订阅与扩展工具不作为首版承诺。
