@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "testedAt": "2026-10-18T10:17:54.612Z",
+  "host": "pi-web",
+  "pluginVersion": "0.2.0",
+  "browserRuntime": "aircraft-b1-browser/0.2.0",
+  "toolchain": {
+    "plugin": "0.2.0",
+    "domainPack": "aircraft-support-pack/v0.1",
+    "compiler": "0.1.0",
+    "businessIr": "aircraft-business-ir/v1",
+    "planIr": "aircraft-support-plan/v1alpha2",
+    "profile": "legacy-minute-v1",
+    "browserRuntime": "aircraft-b1-browser/0.2.0",
+    "runtimeSha256": "33e14373b8d409c91c1834154a3ee814ee27ff8e80302117ea56e2e67c5b9b83",
+    "compilerArtifact": {
+      "wheelSha256": "e7bcd9271dd42106b78e87176e3485b290536f5291c0440872b814fc549858f7",
+      "mode": "portable-compilation-sdk"
+    },
+    "manifest": {
+      "bundle_id": "fbdabd19409873000a170b5311e0ab3049e0b8570b921e5b66ff4d24c44730a5",
+      "compiler_version": "0.1.0",
+      "domain_pack": {
+        "name": "aircraft-support",
+        "version": "aircraft-support-pack/v0.1"
+      },
+      "execution_profile": {
+        "resource_dispatch_index": "absent",
+        "rng": "legacy-sequential-v1",
+        "semantic": "legacy-minute-v1",
+        "work": "stable-topological-serial"
+      },
+      "files": {
+        "business.json": "d5996be0ef602bc7512c857b99ba37de3bcc30ddefa828b3ebcf3f3ad6895dd5",
+        "core.json": "a8a80eaddf72aeb3656a8e0906a8334f5d9ddeaf036cc7223f9d59a19a501213",
+        "lineage.json": "9e33aec8ee175bad811aa4d26a0e750899a44eba055fd0a35b24a0ccc1d92b68",
+        "plan.json": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe"
+      },
+      "identity": {
+        "business_fingerprint": "58bc6d1abdc3339a071e387bd359ce92d7f22e57204182e30d991fc0e6b1e0de",
+        "core_fingerprint": "9a72979cebdb0bd03d9188e1033f81c3e6384cce12a465567a33eb6fe9b0f864",
+        "plan_fingerprint": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe",
+        "source_inputs_sha256": "59c6397c9529fcd6582221deab72744cd4d5788c9b7b5e0fc945e9c15cdf8e5c"
+      },
+      "ir_versions": {
+        "business": "aircraft-business-ir/v1",
+        "core": "simulation-core-ir/v2",
+        "lineage": "compiler-lineage/v2",
+        "plan": "aircraft-support-plan/v1alpha2"
+      },
+      "runtime_version": "0.1.0",
+      "schema_version": "sim-engine-model-bundle/v1"
+    }
+  },
+  "riffPiSurface": "native iframe with connected same-page bridge",
+  "baselineRunId": "run-eb6f2962-8d81-4c3d-94df-2bed005f4249",
+  "variantRunId": "run-96b3fe4a-bf92-47f8-8cc5-7672fc86f98e",
+  "replayRunId": "run-5eeab62d-158b-48fe-bf32-c053dd991869",
+  "checks": [
+    "real SDK seal/validate/compile/inspect",
+    "syntax error and repair",
+    "actual browser Worker execution",
+    "persist then read by runId",
+    "fixed B1 metrics and same-minute order",
+    "single Business field edit changes Plan and events",
+    "independent Python reference for baseline and edit",
+    "reopen and original artifact/runtime/input replay"
+  ]
+}

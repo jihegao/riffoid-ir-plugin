@@ -1,0 +1,38 @@
+
+> riffoid-ir-plugin@0.3.1 check
+> node scripts/check.mjs && node --test tests/*.test.mjs
+
+JavaScript sources checked; the package ships native ES modules without a bundling step.
+✔ loopback broker enforces token, origin and workspace boundaries and serves the real browser assets (114.93975ms)
+✔ session-owned broker is shared and closes only after the last session releases it (95.563916ms)
+✔ real SDK compilation, B1 and +5 variant agree with fixed expectations and independent Python reference (615.976625ms)
+✔ serial durations, cancellation and overlapping preparation consume the compiled Plan (1038.596625ms)
+✔ capability gaps reject unsupported profiles, failures, transport and unknown phase ordering (156.56425ms)
+✔ multi-day and flight-exposure repair match the independent reference; missing repair stays diagnosed (894.361667ms)
+✔ a loaded extension adopts its replacement workspace broker before dispatch without duplicate operations (19.733041ms)
+✔ project keeps the same public summary function as the pure browser-safe module (2.861ms)
+✔ generate-only authoring synchronizes the saved model display without simulation (0.413416ms)
+✔ public PI WEB API v4 contribution renders the selected workspace and opens its qualified panel (2.607625ms)
+✔ Riffoid uses the same tools/runtime, host authorization and existing project.views manifest (116.099291ms)
+✔ JSON diagnostics locate a syntax error; repair can continue through real compilation (328.180542ms)
+✔ mode defaults persist without creating/converting models (334.71375ms)
+✔ frozen artifacts and inputs survive edits, reopen, and sourceRunId replay (370.297792ms)
+✔ missing browser, invalid options, lease loss and failed persistence never report successful execution (185.941208ms)
+✔ content references reject tampering and workspace symlink escapes (181.000667ms)
+✔ Riffoid CLI preserves original draft text, mode and unrelated project views (14.42825ms)
+✔ real SDK check/compile exports only hash-bound input, bundle, Plan and runtime for durable registration (393.889792ms)
+✔ malformed draft returns SDK line/column diagnostics and never registers a compiled artifact (171.030959ms)
+✔ Riffoid platform definitions and skill use the installed shared package identity (0.279333ms)
+✔ browser acceptance defaults outside the repository and rejects source-tree and symlink targets (6.5585ms)
+✔ acceptance restores current model bytes and removes only files absent before the test (6.920041ms)
+✔ evidence export selects accepted files, records hashes, and excludes credentials, raw logs and model backups (10.442417ms)
+✔ opaque Worker SHA-256 fallback matches known vectors and independent boundary-length digests (5.827083ms)
+✔ opaque Worker rejects a tampered frozen runtime before creating any executable Blob (0.779833ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1929.666458

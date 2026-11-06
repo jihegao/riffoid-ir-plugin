@@ -1,0 +1,395 @@
+{
+  "runId": "run-1633d5d6-20e4-4955-8660-0bb3fcd05971",
+  "modelRef": ".riffoid-ir/models/60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad/business.json",
+  "bundleRef": ".riffoid-ir/bundles/94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d/model.simpack",
+  "browserArtifactRef": ".riffoid-ir/artifacts/047fa707ee8becd7a6f1cc1b9b95c3969bb1b3e180a1c9fd50f2c6d368ece4af/browser.json",
+  "runtimeRef": ".riffoid-ir/runtimes/33e14373b8d409c91c1834154a3ee814ee27ff8e80302117ea56e2e67c5b9b83/runtime.js",
+  "toolchain": {
+    "plugin": "0.2.0",
+    "domainPack": "aircraft-support-pack/v0.1",
+    "compiler": "0.1.0",
+    "businessIr": "aircraft-business-ir/v1",
+    "planIr": "aircraft-support-plan/v1alpha2",
+    "profile": "legacy-minute-v1",
+    "browserRuntime": "aircraft-b1-browser/0.2.0",
+    "runtimeSha256": "33e14373b8d409c91c1834154a3ee814ee27ff8e80302117ea56e2e67c5b9b83",
+    "compilerArtifact": {
+      "wheelSha256": "e7bcd9271dd42106b78e87176e3485b290536f5291c0440872b814fc549858f7",
+      "mode": "portable-compilation-sdk"
+    },
+    "manifest": {
+      "bundle_id": "534f9942f556ad8f43a07288d98b36279688537efa483d643a48f338b17c2040",
+      "compiler_version": "0.1.0",
+      "domain_pack": {
+        "name": "aircraft-support",
+        "version": "aircraft-support-pack/v0.1"
+      },
+      "execution_profile": {
+        "resource_dispatch_index": "absent",
+        "rng": "legacy-sequential-v1",
+        "semantic": "legacy-minute-v1",
+        "work": "stable-topological-serial"
+      },
+      "files": {
+        "business.json": "2d3917a4a445f03558d14016f5537c01cce1f44f9b2ec55548dfebb310071804",
+        "core.json": "0986f477631319c38af89389746b03a3fcb0af985115db13526155f457fa80ef",
+        "lineage.json": "a01278f17ffe37dfbc08a306968bd682e8ae2be751c1853ce9cc0519816e7e54",
+        "plan.json": "48979c7feb86451018887e1b8f4bf68bf88a20cdbcb8cde50a662d6926e00fbe"
+      },
+      "identity": {
+        "business_fingerprint": "441616938e81c3fba98462fddc8a524cf7949f272ab4c0448e4277c5d9deaf89",
+        "core_fingerprint": "78601f422332ca391149961d57aecc1d2d2dfe3140a8c05ef6bb351540f3162a",
+        "plan_fingerprint": "48979c7feb86451018887e1b8f4bf68bf88a20cdbcb8cde50a662d6926e00fbe",
+        "source_inputs_sha256": "26d284306986590b3bec24e42e210fc3fc89e5649bafb8062818ff4cfa2a28e8"
+      },
+      "ir_versions": {
+        "business": "aircraft-business-ir/v1",
+        "core": "simulation-core-ir/v2",
+        "lineage": "compiler-lineage/v2",
+        "plan": "aircraft-support-plan/v1alpha2"
+      },
+      "runtime_version": "0.1.0",
+      "schema_version": "sim-engine-model-bundle/v1"
+    }
+  },
+  "inputs": {
+    "seed": 0
+  },
+  "businessFingerprint": "441616938e81c3fba98462fddc8a524cf7949f272ab4c0448e4277c5d9deaf89",
+  "planFingerprint": "48979c7feb86451018887e1b8f4bf68bf88a20cdbcb8cde50a662d6926e00fbe",
+  "execution": {
+    "location": "user-browser",
+    "host": "pi-web",
+    "runtimeVersion": "aircraft-b1-browser/0.2.0",
+    "verification": "local-unverified"
+  },
+  "status": "succeeded",
+  "diagnostics": [],
+  "createdAt": "2026-10-18T10:14:21.542Z",
+  "lastSeen": 1792318462127,
+  "recordRef": ".riffoid-ir/runs/run-1633d5d6-20e4-4955-8660-0bb3fcd05971/record.json",
+  "clientId": "01ed9bda-49dd-475b-9158-b60747d4d192",
+  "metrics": {
+    "planned_sorties": 2,
+    "launched_sorties": 2,
+    "completed_sorties": 2,
+    "successful_mission_waves": 2,
+    "cancelled_sorties": 0,
+    "delayed_sorties": 0,
+    "elapsed_minutes": 60
+  },
+  "events": [
+    {
+      "sequence": 1,
+      "time": 10,
+      "phase": "preflight_generation",
+      "kind": "operations_phase_created",
+      "rule_id": "daily-v1.create-operation",
+      "entity": "job-0001",
+      "source_path": "support_activities.activities[0]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-a-d1-w1",
+        "activity_id": "f35-daily-preflight",
+        "operations_phase": "preflight"
+      }
+    },
+    {
+      "sequence": 2,
+      "time": 10,
+      "phase": "preflight_generation",
+      "kind": "preflight_created",
+      "rule_id": "mission.commission-preflight",
+      "entity": "sortie-a-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "details": {
+        "created": 1
+      }
+    },
+    {
+      "sequence": 3,
+      "time": 10,
+      "phase": "resource_dispatch",
+      "kind": "operations_step_started",
+      "rule_id": "work.serial-step-start",
+      "entity": "job-0001",
+      "source_path": null,
+      "details": {
+        "step_index": 0,
+        "activity_code": "PRE-1"
+      }
+    },
+    {
+      "sequence": 4,
+      "time": 13,
+      "phase": "job_progress_and_completions",
+      "kind": "operations_step_completed",
+      "rule_id": "work.serial-step-complete",
+      "entity": "job-0001",
+      "source_path": null,
+      "details": {
+        "step_index": 0,
+        "activity_code": "PRE-1"
+      }
+    },
+    {
+      "sequence": 5,
+      "time": 13,
+      "phase": "job_progress_and_completions",
+      "kind": "operations_phase_completed",
+      "rule_id": "daily-v1.complete-operation",
+      "entity": "job-0001",
+      "source_path": "support_activities.activities[0]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-a-d1-w1",
+        "activity_id": "f35-daily-preflight",
+        "operations_phase": "preflight"
+      }
+    },
+    {
+      "sequence": 6,
+      "time": 13,
+      "phase": "job_progress_and_completions",
+      "kind": "preflight_completed",
+      "rule_id": "mission.preflight-complete",
+      "entity": "F35-01",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "details": {
+        "mission_id": "sortie-a-d1-w1"
+      }
+    },
+    {
+      "sequence": 7,
+      "time": 20,
+      "phase": "mission_dispatch",
+      "kind": "mission_launched",
+      "rule_id": "mission.dispatch-ready-aircraft",
+      "entity": "sortie-a-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "details": {
+        "aircraft": [
+          "F35-01"
+        ]
+      }
+    },
+    {
+      "sequence": 8,
+      "time": 28,
+      "phase": "mission_success",
+      "kind": "mission_success_point_succeeded",
+      "rule_id": "mission.evaluate-success-point",
+      "entity": "sortie-a-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "details": {
+        "members": 1
+      }
+    },
+    {
+      "sequence": 9,
+      "time": 30,
+      "phase": "mission_returns",
+      "kind": "mission_returned",
+      "rule_id": "mission.return",
+      "entity": "F35-01",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "details": {
+        "mission_id": "sortie-a-d1-w1"
+      }
+    },
+    {
+      "sequence": 10,
+      "time": 35,
+      "phase": "preflight_generation",
+      "kind": "operations_phase_created",
+      "rule_id": "daily-v1.create-operation",
+      "entity": "job-0002",
+      "source_path": "support_activities.activities[1]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-b-d1-w1",
+        "activity_id": "f35-daily-relaunch",
+        "operations_phase": "relaunch"
+      }
+    },
+    {
+      "sequence": 11,
+      "time": 35,
+      "phase": "preflight_generation",
+      "kind": "operations_phase_completed",
+      "rule_id": "daily-v1.complete-operation",
+      "entity": "job-0002",
+      "source_path": "support_activities.activities[1]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-b-d1-w1",
+        "activity_id": "f35-daily-relaunch",
+        "operations_phase": "relaunch"
+      }
+    },
+    {
+      "sequence": 12,
+      "time": 35,
+      "phase": "preflight_generation",
+      "kind": "preflight_completed",
+      "rule_id": "mission.preflight-complete",
+      "entity": "F35-01",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "details": {
+        "mission_id": "sortie-b-d1-w1"
+      }
+    },
+    {
+      "sequence": 13,
+      "time": 35,
+      "phase": "preflight_generation",
+      "kind": "preflight_created",
+      "rule_id": "mission.commission-preflight",
+      "entity": "sortie-b-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "details": {
+        "created": 1
+      }
+    },
+    {
+      "sequence": 14,
+      "time": 45,
+      "phase": "mission_dispatch",
+      "kind": "mission_launched",
+      "rule_id": "mission.dispatch-ready-aircraft",
+      "entity": "sortie-b-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "details": {
+        "aircraft": [
+          "F35-01"
+        ]
+      }
+    },
+    {
+      "sequence": 15,
+      "time": 53,
+      "phase": "mission_success",
+      "kind": "mission_success_point_succeeded",
+      "rule_id": "mission.evaluate-success-point",
+      "entity": "sortie-b-d1-w1",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "details": {
+        "members": 1
+      }
+    },
+    {
+      "sequence": 16,
+      "time": 55,
+      "phase": "mission_returns",
+      "kind": "mission_returned",
+      "rule_id": "mission.return",
+      "entity": "F35-01",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "details": {
+        "mission_id": "sortie-b-d1-w1"
+      }
+    },
+    {
+      "sequence": 17,
+      "time": 55,
+      "phase": "operations_postflight_before_preparation",
+      "kind": "operations_phase_created",
+      "rule_id": "daily-v1.create-operation",
+      "entity": "job-0003",
+      "source_path": "support_activities.activities[2]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-b-d1-w1",
+        "activity_id": "f35-daily-postflight",
+        "operations_phase": "postflight"
+      }
+    },
+    {
+      "sequence": 18,
+      "time": 55,
+      "phase": "resource_dispatch",
+      "kind": "operations_step_started",
+      "rule_id": "work.serial-step-start",
+      "entity": "job-0003",
+      "source_path": null,
+      "details": {
+        "step_index": 0,
+        "activity_code": "POST-1"
+      }
+    },
+    {
+      "sequence": 19,
+      "time": 57,
+      "phase": "job_progress_and_completions",
+      "kind": "operations_step_completed",
+      "rule_id": "work.serial-step-complete",
+      "entity": "job-0003",
+      "source_path": null,
+      "details": {
+        "step_index": 0,
+        "activity_code": "POST-1"
+      }
+    },
+    {
+      "sequence": 20,
+      "time": 57,
+      "phase": "job_progress_and_completions",
+      "kind": "operations_phase_completed",
+      "rule_id": "daily-v1.complete-operation",
+      "entity": "job-0003",
+      "source_path": "support_activities.activities[2]",
+      "details": {
+        "tail_number": "F35-01",
+        "mission_id": "sortie-b-d1-w1",
+        "activity_id": "f35-daily-postflight",
+        "operations_phase": "postflight"
+      }
+    },
+    {
+      "sequence": 21,
+      "time": 57,
+      "phase": "job_progress_and_completions",
+      "kind": "postflight_completed",
+      "rule_id": "daily-v1.postflight-complete",
+      "entity": "F35-01",
+      "source_path": null,
+      "details": {}
+    },
+    {
+      "sequence": 22,
+      "time": 60,
+      "phase": "stop",
+      "kind": "simulation_stopped",
+      "rule_id": "stop.duration",
+      "entity": "simulation",
+      "source_path": null,
+      "details": {}
+    }
+  ],
+  "terminalState": {
+    "aircraft": [
+      {
+        "tail_number": "F35-01",
+        "state": "available",
+        "daily_takeoffs": 2,
+        "postflight_required": false
+      },
+      {
+        "tail_number": "F35-02",
+        "state": "available",
+        "daily_takeoffs": 0,
+        "postflight_required": false
+      }
+    ],
+    "resources": [
+      {
+        "node_id": "flight-line",
+        "personnel_in_use": 0,
+        "equipment_in_use": 0,
+        "inventory": {}
+      }
+    ]
+  },
+  "stopReason": "duration",
+  "finishedAt": "2026-10-18T10:14:22.147Z"
+}

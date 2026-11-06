@@ -1,0 +1,16 @@
+{
+  "schema": "riffoid-ir.evidence-privacy-proof/v1",
+  "observedAt": "2026-10-18T16:53:44.128Z",
+  "source": {
+    "path": "riff-pi-observation.json",
+    "sha256": "7bbb84d749f968f7851de092f4b1f19cba94880f0dfecefd7599d16634e85b92",
+    "keepPrivate": true
+  },
+  "selected": {
+    "path": "riff-pi-observation-redacted.json",
+    "sha256": "425254f829e12776f9e0967d03c2645b425088bc24a02c76da9c7117e8fbc2ee",
+    "actualConnectionTokenPresent": false,
+    "actualConnectionOriginPresent": false
+  },
+  "method": "A separate copy replaces exact connection values recursively. The original observation is unchanged outside the repository."
+}

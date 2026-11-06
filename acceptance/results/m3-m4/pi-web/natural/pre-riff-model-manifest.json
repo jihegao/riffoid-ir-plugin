@@ -1,0 +1,35 @@
+{
+  "observedAt": "2026-10-18T16:51:07.625Z",
+  "modelFiles": [
+    {
+      "path": "model/business-ir.draft.json",
+      "exists": true,
+      "bytes": 4509,
+      "sha256": "7b6ed5ca517ac602ad631b4d642b6df6a8be9939d081cd13c8eb58e63a762173"
+    },
+    {
+      "path": "model/business-ir.json",
+      "exists": true,
+      "bytes": 8811,
+      "sha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad"
+    },
+    {
+      "path": "model/model.simpack",
+      "exists": true,
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d"
+    },
+    {
+      "path": "model/browser-artifact.json",
+      "exists": true,
+      "bytes": 130,
+      "sha256": "626bdaf691e516807c5f88d943519c674795ac54828eaabd46caca0e5168ebb8"
+    },
+    {
+      "path": "model/model-spec.json",
+      "exists": true,
+      "bytes": 986,
+      "sha256": "e78ce7b3913b1dc082ac3072d270c7f67c5f1059f2149eb2ade312dc3c762dd2"
+    }
+  ]
+}

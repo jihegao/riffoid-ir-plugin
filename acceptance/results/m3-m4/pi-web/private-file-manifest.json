@@ -1,0 +1,223 @@
+{
+  "schema": "riffoid-ir.private-evidence-inventory/v1",
+  "policy": "This inventory publishes only digests, sizes and declared path placeholders. No listed private file content is in the public stage.",
+  "files": [
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-baseline-terminal-20261019.json",
+      "bytes": 261004,
+      "sha256": "f94eb34c15efb08a37bb0009d25986bc323a07889981440f22d5b042732d3054",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-before-first-prompt.json",
+      "bytes": 587,
+      "sha256": "c4d5dd177724181ee5673fe12fd2abfc4f3de0ffd1ef194493a2a6052537b5c2",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-generation-in-progress-20261019.json",
+      "bytes": 200605,
+      "sha256": "61a9ebeb343ffb4c7ce5fbab5ce31ca63f1ef6b8ecb199aa69d79aa49452026e",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-generation-terminal-20261019.json",
+      "bytes": 213758,
+      "sha256": "20ca7661997fb71bdce67cabc68bf836667352353d513bee9a776788af44007a",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-replay-terminal-20261019.json",
+      "bytes": 465495,
+      "sha256": "664eca1f04eaa958a8ffa38444444bfde1ea0f910c428d4381fa7cbdfbd1f650",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-audit",
+      "source": "[CANDIDATE_ROOT]/raw/audit-variant-terminal-20261019.json",
+      "bytes": 370635,
+      "sha256": "2f8990b14fc13c4abdae0d26dca072903802372e4bb2bcbec56380110fd2f9bb",
+      "reason": "The complete private audit can contain internal or local execution material; only selected evidence is public."
+    },
+    {
+      "category": "raw-session",
+      "source": "[CANDIDATE_ROOT]/raw/generation-terminal/session-generation-prefix.jsonl",
+      "bytes": 302713,
+      "sha256": "8f2f619eaa8f3ae665ec55d0d5dc18441e48d34f9c13ed91d81c36d22487b092",
+      "reason": "Only the selected redacted excerpt or observation copy is public; the original remains local."
+    },
+    {
+      "category": "raw-session",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/private-session-01a14fd5-6349-7618-a462-89d86b2bffdd.jsonl",
+      "bytes": 455061,
+      "sha256": "62ea6e51b5abd98c5ef6682474ba1a71553167422db3e3b67b6fd0b5c39f42af",
+      "reason": "Only the selected redacted excerpt or observation copy is public; the original remains local."
+    },
+    {
+      "category": "raw-session",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/private-session-01a14fe4-5cc4-7618-a462-89db0a751fed.jsonl",
+      "bytes": 125616,
+      "sha256": "6db3ef3cfa5d761af8b44a7e975fa4af81f287bc653633d9fd999b94872f6ec2",
+      "reason": "Only the selected redacted excerpt or observation copy is public; the original remains local."
+    },
+    {
+      "category": "model-backup",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/model-before/browser-artifact.json",
+      "bytes": 130,
+      "sha256": "626bdaf691e516807c5f88d943519c674795ac54828eaabd46caca0e5168ebb8",
+      "reason": "The original restoration backup remains private; the pre/post byte proof is public."
+    },
+    {
+      "category": "model-backup",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/model-before/business-ir.draft.json",
+      "bytes": 4509,
+      "sha256": "7b6ed5ca517ac602ad631b4d642b6df6a8be9939d081cd13c8eb58e63a762173",
+      "reason": "The original restoration backup remains private; the pre/post byte proof is public."
+    },
+    {
+      "category": "model-backup",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/model-before/business-ir.json",
+      "bytes": 8811,
+      "sha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad",
+      "reason": "The original restoration backup remains private; the pre/post byte proof is public."
+    },
+    {
+      "category": "model-backup",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/model-before/model-spec.json",
+      "bytes": 986,
+      "sha256": "e78ce7b3913b1dc082ac3072d270c7f67c5f1059f2149eb2ade312dc3c762dd2",
+      "reason": "The original restoration backup remains private; the pre/post byte proof is public."
+    },
+    {
+      "category": "model-backup",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/model-before/model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "reason": "The original restoration backup remains private; the pre/post byte proof is public."
+    },
+    {
+      "category": "raw-observation",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/riff-pi-observation.json",
+      "bytes": 1957,
+      "sha256": "7bbb84d749f968f7851de092f4b1f19cba94880f0dfecefd7599d16634e85b92",
+      "reason": "Only the selected redacted excerpt or observation copy is public; the original remains local."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "simpack-binary",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f",
+      "reason": "Binary bundle remains private; this public manifest retains its frozen reference, size and digest."
+    },
+    {
+      "category": "runtime-source",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+      "reason": "The runtime is already identified by the pinned source package; duplicated execution-source bytes remain private in this evidence set."
+    },
+    {
+      "category": "screenshot",
+      "source": "[TEMP_ROOT]/riffoid-ir-m4-baseline-20261019.jpg",
+      "bytes": 133453,
+      "sha256": "1be847e5541eea8756ae33e3fcc68656389f971b19293de820ef8e9f0b927e70",
+      "reason": "The user approved public source and redacted JSON/text only. No image bytes are copied into this public stage."
+    },
+    {
+      "category": "screenshot",
+      "source": "[TEMP_ROOT]/riffoid-ir-m4-generation-only-20261019.jpg",
+      "bytes": 126548,
+      "sha256": "dce4e4d180313fe4814a7331a4c23bf72c418c1ed38e623d99656d59e6a2c4e6",
+      "reason": "The user approved public source and redacted JSON/text only. No image bytes are copied into this public stage."
+    },
+    {
+      "category": "screenshot",
+      "source": "[TEMP_ROOT]/riffoid-ir-m4-replay-20261019.jpg",
+      "bytes": 134622,
+      "sha256": "41604bd6fe029a0b9e11702e500d3b85b05092347fa57baacb0bc3fb3663b980",
+      "reason": "The user approved public source and redacted JSON/text only. No image bytes are copied into this public stage."
+    },
+    {
+      "category": "screenshot",
+      "source": "[TEMP_ROOT]/riffoid-ir-m4-variant-20261019.jpg",
+      "bytes": 118133,
+      "sha256": "50da894d1bd02076d5de704ecca10cadc16d9e0f97d350d54484ffda5029f0a8",
+      "reason": "The user approved public source and redacted JSON/text only. No image bytes are copied into this public stage."
+    }
+  ]
+}

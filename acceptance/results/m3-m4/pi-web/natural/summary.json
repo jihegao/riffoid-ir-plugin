@@ -1,0 +1,60 @@
+{
+  "schema": "riffoid-ir.pi-web-natural-acceptance-evidence/v1",
+  "observedAt": "2026-10-18T16:51:07.624Z",
+  "pluginVersion": "0.3.1",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "host": "pi-web",
+  "oldRunsUnchanged": [
+    {
+      "runId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "directorySha256": "9e1185813fefb89e92daeda2f2e5d02697af9c316cc0f28cf599376654a2d5d8",
+      "exactPriorDirectoryMatch": true
+    },
+    {
+      "runId": "run-7dec298a-3e1b-4668-a11d-9c23fc61ce63",
+      "directorySha256": "19cb04e4d0ccac1ac5ee777be80271982ba32e3411acfb2f9bf6cf67f23e40e6",
+      "exactPriorDirectoryMatch": true
+    }
+  ],
+  "replay": {
+    "runId": "run-638cc2b8-6ba6-4c72-8bc9-994814b3866d",
+    "sourceRunId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+    "recordSha256": "e4c39d892ed6e4281e17a6ec585b3caa8a2b1d577af693f1bf5224a7c1b9924f",
+    "directorySha256": "b4c07a3e92ddc0d172f40ce2213d75843fc1ead9d41d96e1e51d706a8834d1db",
+    "allFrozenReferencesAndInputsEqualBaseline": true,
+    "metricsAndEventsExactlyEqualBaseline": true,
+    "currentDraftUnchanged": {
+      "bytes": 4509,
+      "sha256": "7b6ed5ca517ac602ad631b4d642b6df6a8be9939d081cd13c8eb58e63a762173",
+      "equalsSavedVariantBytes": true,
+      "secondMissionTime": "00:45"
+    }
+  },
+  "privacy": "Only visible user text (including the generate-only steering intervention), completed assistant text, displayed command receipts, actual pipeline arguments/selected results, and non-secret counts/provenance are exported. Raw Session files stay private outside the repository.",
+  "sessions": [
+    {
+      "sessionId": "01a14fd5-6349-7618-a462-89d86b2bffdd",
+      "file": "natural/sessions/01a14fd5-6349-7618-a462-89d86b2bffdd.json",
+      "sha256": "8faaf6e7794c25eb6d9e228715f9ff1df1fd5e4204aaff8d0c6c06ecfc65023b"
+    },
+    {
+      "sessionId": "01a14fe4-5cc4-7618-a462-89db0a751fed",
+      "file": "natural/sessions/01a14fe4-5cc4-7618-a462-89db0a751fed.json",
+      "sha256": "b9c3be3cf56c1a0acc1fd0aaecb0eaefc5d46630b3eab2d7c8dc0ca76ebeacb6"
+    }
+  ],
+  "commandCoverage": {
+    "commands": [
+      "/sim code",
+      "/sim ir",
+      "/sim show"
+    ],
+    "operatorObservedSequence": [
+      "/sim show",
+      "/sim code",
+      "/sim ir",
+      "/sim show"
+    ],
+    "evidence": "The first Session contains four persisted displayed command status receipts. The operation sequence was observed by the UI operator."
+  }
+}

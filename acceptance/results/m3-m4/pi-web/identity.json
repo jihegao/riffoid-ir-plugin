@@ -1,0 +1,56 @@
+{
+  "schema": "riffoid-ir.public-pi-web-acceptance-identity/v1",
+  "plugin": "riffoid-ir-plugin",
+  "version": "0.3.1",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "packageBytes": 77041,
+  "packageFileCount": 45,
+  "compilerVersion": "0.1.0",
+  "compilerWheelSha256": "e7bcd9271dd42106b78e87176e3485b290536f5291c0440872b814fc549858f7",
+  "browserRuntimeVersion": "aircraft-support-browser/0.3.0",
+  "runtimeSha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef",
+  "workerSha256": "5905881426fc6e21310f880b07cd7a840981883e9544922bb8fd6f47e3802e0f",
+  "host": "PiWeb 1.202610.3",
+  "model": "xai/grok-4.7",
+  "scope": "Real isolated PiWeb natural dialogue and real riff-pi Direct Browser acceptance only.",
+  "runs": [
+    {
+      "runId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "role": "natural-baseline",
+      "evidence": "runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/evidence.json",
+      "sha256": "0840f74f84178911eb29f8242182612a0b64c9a18839bef586ea04d5311c5575"
+    },
+    {
+      "runId": "run-7dec298a-3e1b-4668-a11d-9c23fc61ce63",
+      "role": "natural-variant",
+      "evidence": "runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/evidence.json",
+      "sha256": "23945308b3492a531cbd3e4bfd9100e65c316b3a0152b8e33a83ca6085cf9b9c"
+    },
+    {
+      "runId": "run-638cc2b8-6ba6-4c72-8bc9-994814b3866d",
+      "role": "natural-replay",
+      "sourceRunId": "run-4c3f45e8-92f5-4edf-a477-fb72ad087596",
+      "evidence": "runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/evidence.json",
+      "sha256": "c23b8be71d75ce196460a2fc05e3a81747525a6643947fa17290e64eec0f1070"
+    },
+    {
+      "runId": "run-ffd4d512-9820-43db-82b0-c1080ccbaabd",
+      "role": "riff-pi-baseline",
+      "evidence": "runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/evidence.json",
+      "sha256": "52ff024809c7c7c4afd8b1e7be9a82bfcdaec1302122d7ebdbe1277935639b24"
+    },
+    {
+      "runId": "run-a58c2bdf-7400-443a-95b0-c632a049b530",
+      "role": "riff-pi-variant",
+      "evidence": "runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/evidence.json",
+      "sha256": "9ca70e60b33bfed369297d11e9a869b610d5f3ef3586c932b9f5276b85da94af"
+    },
+    {
+      "runId": "run-c6350d81-7379-4543-b9a0-d7e9778193b2",
+      "role": "riff-pi-replay",
+      "sourceRunId": "run-ffd4d512-9820-43db-82b0-c1080ccbaabd",
+      "evidence": "runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/evidence.json",
+      "sha256": "053b3d25cebc88d78f978d7fbfca37d8e55c595223cc20be54d7184982332a4a"
+    }
+  ]
+}

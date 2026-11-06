@@ -6,3 +6,16 @@ node_modules/
 dist/
 build/
 *.log
+.compiler/
+# Modeling acceptance runs belong in the external test workspace.
+.riffoid-ir/
+model/
+*.tgz
+__pycache__/
+
+# Public acceptance evidence is source and redacted JSON/text only.
+acceptance/results/**/*.png
+acceptance/results/**/*.jpg
+acceptance/results/**/*.jpeg
+acceptance/results/**/*.webp
+acceptance/results/**/*.simpack

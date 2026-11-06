@@ -1,0 +1,18 @@
+{
+  "pluginVersion": "0.2.1",
+  "recordedAt": "2026-10-18T12:37:03.465Z",
+  "automatedTests": {
+    "command": "npm run check",
+    "passed": 14,
+    "failed": 0
+  },
+  "skillValidation": "passed",
+  "piSessionReload": "passed",
+  "workspaceBrokerReplacement": "passed in automated test and actual Pi /sim show",
+  "riffPi": "passed; see browser-regression/summary.json",
+  "limitations": [
+    "Browser execution remains the B1 subset.",
+    "MTBF/MTTR and multi-day per-aircraft semantics are not yet implemented or accepted.",
+    "Agent behavior regression inspected sources only; it did not implement the new domain behavior."
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "schema": "riffoid-ir.public-evidence-manifest/v1",
+  "generatedAt": "2026-10-18T17:02:58.657Z",
+  "packageSha256": "86b7a28a1b92652fb01b15ea6671414ecdd5e38c639878455e7abffb60d46ad6",
+  "hostScope": "pi-web",
+  "fileCount": 41,
+  "files": [
+    {
+      "path": "generation/business-ir.draft.json",
+      "bytes": 4509,
+      "sha256": "e27c4060e281ad195035f2ac82913651c472f00aebcd4bd0d306a51649bba4d8",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/generation-terminal/business-ir.draft.json",
+      "originalSourceSha256": "e27c4060e281ad195035f2ac82913651c472f00aebcd4bd0d306a51649bba4d8",
+      "originalSourceBytes": 4509
+    },
+    {
+      "path": "generation/selected-evidence.json",
+      "bytes": 5041,
+      "sha256": "9cc44fc94c33a3abfac4799fcd54fea8195f09edc60b9e774db1db93ef1d9060",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/generation-terminal/selected-evidence.json",
+      "originalSourceSha256": "3e32ee4bd25bb1c83974c93fd916638a3d3e7770faaf26ebcc0b76e2ac3c3f39",
+      "originalSourceBytes": 5062
+    },
+    {
+      "path": "graphs/15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c.json",
+      "bytes": 8811,
+      "sha256": "15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/business.json",
+      "originalSourceSha256": "15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c",
+      "originalSourceBytes": 8811
+    },
+    {
+      "path": "graphs/53bdbe1b4e8d1ea5e640da3ef9c9d6dc5909148a0e53ca879e86baa65442881c.json",
+      "bytes": 10354,
+      "sha256": "53bdbe1b4e8d1ea5e640da3ef9c9d6dc5909148a0e53ca879e86baa65442881c",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/browser-artifact.json",
+      "originalSourceSha256": "53bdbe1b4e8d1ea5e640da3ef9c9d6dc5909148a0e53ca879e86baa65442881c",
+      "originalSourceBytes": 10354
+    },
+    {
+      "path": "graphs/59fe0b42d39796eb7a99fd1dfd14c36a3d0d50744532570caa9c02fe54d59875.json",
+      "bytes": 5119,
+      "sha256": "59fe0b42d39796eb7a99fd1dfd14c36a3d0d50744532570caa9c02fe54d59875",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/plan.json",
+      "originalSourceSha256": "59fe0b42d39796eb7a99fd1dfd14c36a3d0d50744532570caa9c02fe54d59875",
+      "originalSourceBytes": 5119
+    },
+    {
+      "path": "graphs/60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad.json",
+      "bytes": 8811,
+      "sha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/business.json",
+      "originalSourceSha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad",
+      "originalSourceBytes": 8811
+    },
+    {
+      "path": "graphs/8222ad1091a22e042b8593777b42caa013cb1a7f2a8d6ee59a924a6513d43524.json",
+      "bytes": 13457,
+      "sha256": "8222ad1091a22e042b8593777b42caa013cb1a7f2a8d6ee59a924a6513d43524",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/independent-reference.json",
+      "originalSourceSha256": "8222ad1091a22e042b8593777b42caa013cb1a7f2a8d6ee59a924a6513d43524",
+      "originalSourceBytes": 13457
+    },
+    {
+      "path": "graphs/dc71e85313c107832555ab1ac37e8ceca772e9c4e3ee3db5431bca31566a8da5.json",
+      "bytes": 13457,
+      "sha256": "dc71e85313c107832555ab1ac37e8ceca772e9c4e3ee3db5431bca31566a8da5",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/independent-reference.json",
+      "originalSourceSha256": "dc71e85313c107832555ab1ac37e8ceca772e9c4e3ee3db5431bca31566a8da5",
+      "originalSourceBytes": 13457
+    },
+    {
+      "path": "graphs/f17cd440f410c349c3a5a1b28d5f907ef49d6ded0683be59fbb2444ad519f2c5.json",
+      "bytes": 10354,
+      "sha256": "f17cd440f410c349c3a5a1b28d5f907ef49d6ded0683be59fbb2444ad519f2c5",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/browser-artifact.json",
+      "originalSourceSha256": "f17cd440f410c349c3a5a1b28d5f907ef49d6ded0683be59fbb2444ad519f2c5",
+      "originalSourceBytes": 10354
+    },
+    {
+      "path": "graphs/f6a9f0522a6dd6b68125f0df49774d90ada5f630fd2f431be106083b56c1f461.json",
+      "bytes": 5119,
+      "sha256": "f6a9f0522a6dd6b68125f0df49774d90ada5f630fd2f431be106083b56c1f461",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/plan.json",
+      "originalSourceSha256": "f6a9f0522a6dd6b68125f0df49774d90ada5f630fd2f431be106083b56c1f461",
+      "originalSourceBytes": 5119
+    },
+    {
+      "path": "identity.json",
+      "bytes": 2533,
+      "sha256": "758bff467862f704d2bd8638ae87fd1c7d786b3804bee02ff687e72e029c87ff",
+      "mode": "derived"
+    },
+    {
+      "path": "natural/business-field-diff.json",
+      "bytes": 172,
+      "sha256": "e5b328cbf5080e2276a238a81d611ff16bf45a54965f34ee769c0f2d39919697",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/baseline-variant-terminal/business-field-diff.json",
+      "originalSourceSha256": "e5b328cbf5080e2276a238a81d611ff16bf45a54965f34ee769c0f2d39919697",
+      "originalSourceBytes": 172
+    },
+    {
+      "path": "natural/diagnostic-and-repair.json",
+      "bytes": 50996,
+      "sha256": "18675c51ebbae57d0b786d1f1c31b09bd3bfd8c8d0ef9617fad8f08071480ece",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/baseline-variant-terminal/selected-evidence.json",
+      "originalSourceSha256": "959a958476d8a66afe91078740c21fd2a3b433521323ed1622c7ee16c74f1a99",
+      "originalSourceBytes": 51120
+    },
+    {
+      "path": "natural/malformed-draft-reconstructed.txt",
+      "bytes": 4509,
+      "sha256": "57bd9680b7b02d0ffe472a636de61e2b23487975dd937073f25cc17fd9079668",
+      "mode": "exact",
+      "source": "[CANDIDATE_ROOT]/raw/baseline-variant-terminal/malformed-draft-reconstructed.json",
+      "originalSourceSha256": "57bd9680b7b02d0ffe472a636de61e2b23487975dd937073f25cc17fd9079668",
+      "originalSourceBytes": 4509,
+      "note": "Invalid JSON reconstructed from captured exact draft bytes and successful edit arguments; the actual following check diagnostic is included separately."
+    },
+    {
+      "path": "natural/pre-riff-model-manifest.json",
+      "bytes": 969,
+      "sha256": "20c3a309a36c25eb183c5c52a854b7af4c4819a86079fe172d134cbe35cdc9d3",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/pre-riff-model-manifest.json",
+      "originalSourceSha256": "20c3a309a36c25eb183c5c52a854b7af4c4819a86079fe172d134cbe35cdc9d3",
+      "originalSourceBytes": 969
+    },
+    {
+      "path": "natural/sessions/01a14fd5-6349-7618-a462-89d86b2bffdd.json",
+      "bytes": 47817,
+      "sha256": "8faaf6e7794c25eb6d9e228715f9ff1df1fd5e4204aaff8d0c6c06ecfc65023b",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/selected-evidence.json",
+      "originalSourceSha256": "3a55690fe2b7260c8ad47b777472a894b3203497e6ee473752ec5ce737308b51",
+      "originalSourceBytes": 88709
+    },
+    {
+      "path": "natural/sessions/01a14fe4-5cc4-7618-a462-89db0a751fed.json",
+      "bytes": 31385,
+      "sha256": "b9c3be3cf56c1a0acc1fd0aaecb0eaefc5d46630b3eab2d7c8dc0ca76ebeacb6",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/selected-evidence.json",
+      "originalSourceSha256": "3a55690fe2b7260c8ad47b777472a894b3203497e6ee473752ec5ce737308b51",
+      "originalSourceBytes": 88709
+    },
+    {
+      "path": "natural/summary.json",
+      "bytes": 2467,
+      "sha256": "8c0107b9c8758c46f5a4641a07f28d3dea08e73a374d5586c773c4126e37f305",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/natural-complete/selected-evidence.json",
+      "originalSourceSha256": "3a55690fe2b7260c8ad47b777472a894b3203497e6ee473752ec5ce737308b51",
+      "originalSourceBytes": 88709
+    },
+    {
+      "path": "private-file-manifest.json",
+      "bytes": 11649,
+      "sha256": "260bf1cfaaeb952c0bc3af72c65c7fe7a7a5abe2a903c5c209e91b8d3fd93e58",
+      "mode": "derived"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 3196,
+      "sha256": "5392457228f54c1de28362bbbbf57e37fec5aed77bf24520010226112c9fba15",
+      "mode": "authored"
+    },
+    {
+      "path": "riff-pi/business-edit.json",
+      "bytes": 175,
+      "sha256": "a5b8e5ccdd68ac27b355921a7f7725898fb64903296c1db99e29c211504c5c61",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/business-edit.json",
+      "originalSourceSha256": "a5b8e5ccdd68ac27b355921a7f7725898fb64903296c1db99e29c211504c5c61",
+      "originalSourceBytes": 175
+    },
+    {
+      "path": "riff-pi/domain-extension-diagnostic.json",
+      "bytes": 1940,
+      "sha256": "4b53930180f38cd7f465516941941b7bfe7440bdad2951bd128f93482f6114b4",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/domain-extension-diagnostic.json",
+      "originalSourceSha256": "4b53930180f38cd7f465516941941b7bfe7440bdad2951bd128f93482f6114b4",
+      "originalSourceBytes": 1940
+    },
+    {
+      "path": "riff-pi/host-manifest.json",
+      "bytes": 3339,
+      "sha256": "c9b42fab3cbe7603816287ac2787beed8dc23ad9d411d206e4e63d1e64458dfd",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/host-manifest.json",
+      "originalSourceSha256": "d418b6e92525699a4d68ce0221e0f121e68c1d911eec4e36efe8081c3743477d",
+      "originalSourceBytes": 3395
+    },
+    {
+      "path": "riff-pi/observation-privacy-proof.json",
+      "bytes": 641,
+      "sha256": "ad65c6702af53c9a662636078f4618412af5b6962a5639f72e519f5017e72978",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/observation-privacy-proof.json",
+      "originalSourceSha256": "ad65c6702af53c9a662636078f4618412af5b6962a5639f72e519f5017e72978",
+      "originalSourceBytes": 641
+    },
+    {
+      "path": "riff-pi/observation.json",
+      "bytes": 1951,
+      "sha256": "60f534007a5b45c799db4b9bf72a3f55be8107df853777538eaf70cf2d539604",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/riff-pi-observation-redacted.json",
+      "originalSourceSha256": "425254f829e12776f9e0967d03c2645b425088bc24a02c76da9c7117e8fbc2ee",
+      "originalSourceBytes": 1967
+    },
+    {
+      "path": "riff-pi/restoration-proof.json",
+      "bytes": 3871,
+      "sha256": "017b3df21cffe8d4e452977a1d73a6d52f85eea43633e5ed3a676ac510d26fbd",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/restoration-proof.json",
+      "originalSourceSha256": "017b3df21cffe8d4e452977a1d73a6d52f85eea43633e5ed3a676ac510d26fbd",
+      "originalSourceBytes": 3871
+    },
+    {
+      "path": "riff-pi/summary.json",
+      "bytes": 3915,
+      "sha256": "8fe9e2b552c2273bc21140668f35f9ab551d163b233b488eaed3698f74a3c884",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/summary.json",
+      "originalSourceSha256": "1594a85bd733442e4b324c8b865f129d8cedeab3e6d680bd57927c4b28eedd90",
+      "originalSourceBytes": 3977
+    },
+    {
+      "path": "riff-pi/syntax-diagnostic.json",
+      "bytes": 255,
+      "sha256": "15b9b6878b54d986d8230769ad77f6b8aac283a81a68d75e4ed7d06cadb3516b",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/riff-pi-final-r2-20261019/syntax-diagnostic.json",
+      "originalSourceSha256": "fc91d0955e7024a3db8c1f73f869f09e4c60503a54ca25be2991c5d0325fa25f",
+      "originalSourceBytes": 317
+    },
+    {
+      "path": "runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/evidence.json",
+      "bytes": 3182,
+      "sha256": "0840f74f84178911eb29f8242182612a0b64c9a18839bef586ea04d5311c5575",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/record.json",
+      "bytes": 12200,
+      "sha256": "f67bc3ca7f328e4e78ea08bdabf267c6b810019654c4634418a4f4382754692b",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-4c3f45e8-92f5-4edf-a477-fb72ad087596/record.json",
+      "originalSourceSha256": "c4205e5bba772169b71d6faf76ee6f610107e86e6c6b64c838159d9591652027",
+      "originalSourceBytes": 12254,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/evidence.json",
+      "bytes": 3241,
+      "sha256": "c23b8be71d75ce196460a2fc05e3a81747525a6643947fa17290e64eec0f1070",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/record.json",
+      "bytes": 12261,
+      "sha256": "1cd563c980a15455fa021de89e0de85701d7f0d32eaba6dd0149796c3853ca88",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-638cc2b8-6ba6-4c72-8bc9-994814b3866d/record.json",
+      "originalSourceSha256": "e4c39d892ed6e4281e17a6ec585b3caa8a2b1d577af693f1bf5224a7c1b9924f",
+      "originalSourceBytes": 12315,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/evidence.json",
+      "bytes": 3181,
+      "sha256": "23945308b3492a531cbd3e4bfd9100e65c316b3a0152b8e33a83ca6085cf9b9c",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/record.json",
+      "bytes": 12200,
+      "sha256": "de5b8f0d5ff7cb8690e50ea17d485f4783a6aa108e9d722ff06843e93a8d28f7",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-7dec298a-3e1b-4668-a11d-9c23fc61ce63/record.json",
+      "originalSourceSha256": "38bad839274bb39422b386279c02b53a2c64ba23635477310833a095f8415d2b",
+      "originalSourceBytes": 12254,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/evidence.json",
+      "bytes": 3081,
+      "sha256": "9ca70e60b33bfed369297d11e9a869b610d5f3ef3586c932b9f5276b85da94af",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/record.json",
+      "bytes": 12200,
+      "sha256": "f7abcb60318e2c0e1aef7a0f899b486e5deec3210328da4ee2b6583babb27092",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-a58c2bdf-7400-443a-95b0-c632a049b530/record.json",
+      "originalSourceSha256": "998f0cf30f4f20805874dabf94f1986659ff501a55e9ead55eb8a7a53480a933",
+      "originalSourceBytes": 12254,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/evidence.json",
+      "bytes": 3141,
+      "sha256": "053b3d25cebc88d78f978d7fbfca37d8e55c595223cc20be54d7184982332a4a",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/record.json",
+      "bytes": 12261,
+      "sha256": "13bc1313d509015c866a19dea70688bd6b84441aa0d7894315d090fc077fa01e",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-c6350d81-7379-4543-b9a0-d7e9778193b2/record.json",
+      "originalSourceSha256": "930ab24c386ba77f0527cc154291b1a981818e0d9df7ce988591c5df953439d6",
+      "originalSourceBytes": 12315,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/evidence.json",
+      "bytes": 3082,
+      "sha256": "52ff024809c7c7c4afd8b1e7be9a82bfcdaec1302122d7ebdbe1277935639b24",
+      "mode": "derived"
+    },
+    {
+      "path": "runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/record.json",
+      "bytes": 12200,
+      "sha256": "049ab71c28fa5508ef334c3090de616f7b2ccaa74da557b3c78bd90499394208",
+      "mode": "derived",
+      "source": "[CANDIDATE_ROOT]/raw/runs/run-ffd4d512-9820-43db-82b0-c1080ccbaabd/record.json",
+      "originalSourceSha256": "1fcd1b8f5f2fb4974ccc773aa4e093d49847f660d4d2f0a0e8b53b5c48e7f695",
+      "originalSourceBytes": 12254,
+      "note": "Derived public record omits the ephemeral executor identifier. All frozen references, run identities and fingerprint bindings are retained."
+    },
+    {
+      "path": "validation.json",
+      "bytes": 634,
+      "sha256": "7cf1620f3f6a4182c8aa734028d9272602f0ebe51a357ddd9647dc0ab66b4e34",
+      "mode": "derived"
+    }
+  ],
+  "manifestExcludes": [
+    "manifest.json",
+    "MANIFEST-SHA256.txt"
+  ],
+  "privacyPolicy": "Public source and redacted JSON/text only. Private artifacts are represented by metadata in private-file-manifest.json."
+}

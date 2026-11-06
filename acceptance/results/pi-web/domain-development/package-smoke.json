@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "pluginVersion": "0.2.1",
+  "packageRoot": "<TASK_TMP>/riffoid-package-021-h0Aee0/package",
+  "workspace": "<TASK_TMP>/riffoid-package-021-h0Aee0/workspace",
+  "tools": [
+    "project_ir_check",
+    "project_ir_compile",
+    "project_ir_run",
+    "project_ir_result"
+  ],
+  "checks": [
+    "actual Pi SDK loads extracted package extension and skill",
+    "real SDK check and compile",
+    "actual plugin version in toolchain",
+    "missing browser remains diagnostic",
+    "failure capability gap links packaged development source",
+    "before-agent context links packaged guide"
+  ],
+  "aiModelCalled": false
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "migratedAt": "2026-10-18T13:32:40.720Z",
+  "source": "<PLUGIN_SOURCE>",
+  "destination": "<EXTERNAL_TEST_ROOT>/workspaces/pi-web-acceptance",
+  "files": 36,
+  "bytes": 427218,
+  "allFileHashesMatch": true,
+  "inventorySha256": "1ec5879ba36d2abd4477abc10c069862bf3cb8d336abbe32f35cf08b2f36ee6d",
+  "preservedRunIds": [
+    "run-03d82085-ba87-4f2a-bee6-cf3bcc3c2865",
+    "run-05e05115-6e6a-4757-9519-5bdd6387e9c2",
+    "run-1633d5d6-20e4-4955-8660-0bb3fcd05971",
+    "run-29e4f101-8e49-4e4d-b3b3-f1c44d20529a",
+    "run-559cd9f7-be20-43b5-90a9-7727ebb14867",
+    "run-5eeab62d-158b-48fe-bf32-c053dd991869",
+    "run-77f9d3b5-6399-472e-82ba-0e8936931ce9",
+    "run-8d9f4ee1-346c-4c5f-a34e-43efdc731b0a",
+    "run-94ca8e4e-6306-4f89-88e4-136c24d30ff2",
+    "run-96b3fe4a-bf92-47f8-8cc5-7672fc86f98e",
+    "run-af618561-3061-49c5-ba04-d51cb2e5899b",
+    "run-d8cdf0fd-6712-4e13-b882-5a8f132ec950",
+    "run-e5d5e37c-96de-47a6-8394-6b3eaaacb8e4",
+    "run-eb6f2962-8d81-4c3d-94df-2bed005f4249",
+    "run-f042bce7-d11d-4323-a634-f8d1d4344f0d"
+  ],
+  "session": {
+    "sourceId": "01a14e7a-3ce5-713e-bb05-e17fda2b897b",
+    "targetId": "01a14f36-e783-74ba-9383-b0c5d5e422db",
+    "targetFile": "<LOCAL_USER>/.pi/agent/sessions/--Users-jihegao-.local-share-riffoid-ir-plugin-workspaces-pi-web-acceptance--/2026-10-18T13-32-40-707Z_01a14f36-e783-74ba-9383-b0c5d5e422db.jsonl"
+  },
+  "oldBrokerStopped": true,
+  "verifiedAt": "2026-10-18T13:45:33.075Z",
+  "originalFilesReverified": 35,
+  "rotatedFiles": [
+    ".riffoid-ir/connection.json"
+  ],
+  "originalModel": {
+    "restored": true,
+    "files": [
+      {
+        "name": "business-ir.draft.json",
+        "sha256": "dc5bc97d1381128e9dbc7ce34ce55921d53405865d23cdb17722db73e1364d75"
+      },
+      {
+        "name": "business-ir.json",
+        "sha256": "214b9c1b7eb6bedf2abc7c4d80baa04cbe58d44a18ece7aae9c26d4cd4b628df"
+      },
+      {
+        "name": "model.simpack",
+        "sha256": "1b85d1f8e19a5bc1e2b21e80f92fc57d13f1c8db034614ae370e5714c9c3a2db"
+      },
+      {
+        "name": "browser-artifact.json",
+        "sha256": "013f20c065f598345d401c80f0221a6a258617544b28608e72212a332126aee5"
+      },
+      {
+        "name": "model-spec.json",
+        "sha256": "e78ce7b3913b1dc082ac3072d270c7f67c5f1059f2149eb2ade312dc3c762dd2"
+      }
+    ]
+  },
+  "currentModelDurationMinutes": 4320,
+  "originalMessagesPreserved": 258,
+  "project": {
+    "id": "03fcac5f-a86d-4c45-b244-035c6f1857b0",
+    "path": "<EXTERNAL_TEST_ROOT>/workspaces/pi-web-acceptance",
+    "workspaceId": "931c833d5cb6"
+  },
+  "sourceTreeHasTestWorkspace": false,
+  "unitTests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "riffPi": {
+    "status": "passed",
+    "baselineRunId": "run-89efa612-9a62-4b68-a45d-068a620bd5c8",
+    "variantRunId": "run-4b21070f-4bd8-4f7e-a223-fef9dce0f83b",
+    "replayRunId": "run-8a0563a6-f305-48ec-9c46-7b195bb47e4f"
+  },
+  "rawOutput": "<EXTERNAL_TEST_ROOT>/results/riff-pi/workspace-migration-2026-10-18T13-39-19-786Z"
+}

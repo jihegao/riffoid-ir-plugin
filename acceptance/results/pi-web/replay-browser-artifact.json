@@ -1,0 +1,316 @@
+{
+  "version": "riffoid-browser-artifact/v1",
+  "modelRef": ".riffoid-ir/models/15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c/business.json",
+  "bundleRef": ".riffoid-ir/bundles/301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f/model.simpack",
+  "runtimeRef": ".riffoid-ir/runtimes/33e14373b8d409c91c1834154a3ee814ee27ff8e80302117ea56e2e67c5b9b83/runtime.js",
+  "toolchain": {
+    "plugin": "0.2.0",
+    "domainPack": "aircraft-support-pack/v0.1",
+    "compiler": "0.1.0",
+    "businessIr": "aircraft-business-ir/v1",
+    "planIr": "aircraft-support-plan/v1alpha2",
+    "profile": "legacy-minute-v1",
+    "browserRuntime": "aircraft-b1-browser/0.2.0",
+    "runtimeSha256": "33e14373b8d409c91c1834154a3ee814ee27ff8e80302117ea56e2e67c5b9b83",
+    "compilerArtifact": {
+      "wheelSha256": "e7bcd9271dd42106b78e87176e3485b290536f5291c0440872b814fc549858f7",
+      "mode": "portable-compilation-sdk"
+    },
+    "manifest": {
+      "bundle_id": "fbdabd19409873000a170b5311e0ab3049e0b8570b921e5b66ff4d24c44730a5",
+      "compiler_version": "0.1.0",
+      "domain_pack": {
+        "name": "aircraft-support",
+        "version": "aircraft-support-pack/v0.1"
+      },
+      "execution_profile": {
+        "resource_dispatch_index": "absent",
+        "rng": "legacy-sequential-v1",
+        "semantic": "legacy-minute-v1",
+        "work": "stable-topological-serial"
+      },
+      "files": {
+        "business.json": "d5996be0ef602bc7512c857b99ba37de3bcc30ddefa828b3ebcf3f3ad6895dd5",
+        "core.json": "a8a80eaddf72aeb3656a8e0906a8334f5d9ddeaf036cc7223f9d59a19a501213",
+        "lineage.json": "9e33aec8ee175bad811aa4d26a0e750899a44eba055fd0a35b24a0ccc1d92b68",
+        "plan.json": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe"
+      },
+      "identity": {
+        "business_fingerprint": "58bc6d1abdc3339a071e387bd359ce92d7f22e57204182e30d991fc0e6b1e0de",
+        "core_fingerprint": "9a72979cebdb0bd03d9188e1033f81c3e6384cce12a465567a33eb6fe9b0f864",
+        "plan_fingerprint": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe",
+        "source_inputs_sha256": "59c6397c9529fcd6582221deab72744cd4d5788c9b7b5e0fc945e9c15cdf8e5c"
+      },
+      "ir_versions": {
+        "business": "aircraft-business-ir/v1",
+        "core": "simulation-core-ir/v2",
+        "lineage": "compiler-lineage/v2",
+        "plan": "aircraft-support-plan/v1alpha2"
+      },
+      "runtime_version": "0.1.0",
+      "schema_version": "sim-engine-model-bundle/v1"
+    }
+  },
+  "businessFingerprint": "58bc6d1abdc3339a071e387bd359ce92d7f22e57204182e30d991fc0e6b1e0de",
+  "planFingerprint": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe",
+  "defaultSeed": 0,
+  "plan": {
+    "activities": [
+      {
+        "activity_id": "f35-daily-preflight",
+        "aircraft_model": "F35",
+        "equipment_component_index": -1,
+        "index": 0,
+        "kind": "preflight",
+        "maintenance_methods": [],
+        "name": "Preflight",
+        "phase": "preflight",
+        "plan_group_id": "f35-daily",
+        "priority": 1,
+        "replacement_ratio": 0,
+        "resource_node_index": 0,
+        "source_path": "support_activities.activities[0]",
+        "steps": [
+          {
+            "code": "PRE-1",
+            "duration_minutes": 3,
+            "equipment": 1,
+            "index": 0,
+            "personnel": 1,
+            "predecessors": [],
+            "source_path": "support_activities.activities[0].jobs[0]",
+            "spares": []
+          }
+        ]
+      },
+      {
+        "activity_id": "f35-daily-relaunch",
+        "aircraft_model": "F35",
+        "equipment_component_index": -1,
+        "index": 1,
+        "kind": "relaunch",
+        "maintenance_methods": [],
+        "name": "Relaunch",
+        "phase": "relaunch",
+        "plan_group_id": "f35-daily",
+        "priority": 1,
+        "replacement_ratio": 0,
+        "resource_node_index": 0,
+        "source_path": "support_activities.activities[1]",
+        "steps": []
+      },
+      {
+        "activity_id": "f35-daily-postflight",
+        "aircraft_model": "F35",
+        "equipment_component_index": -1,
+        "index": 2,
+        "kind": "postflight",
+        "maintenance_methods": [],
+        "name": "Postflight",
+        "phase": "postflight",
+        "plan_group_id": "f35-daily",
+        "priority": 1,
+        "replacement_ratio": 0,
+        "resource_node_index": 0,
+        "source_path": "support_activities.activities[2]",
+        "steps": [
+          {
+            "code": "POST-1",
+            "duration_minutes": 2,
+            "equipment": 1,
+            "index": 0,
+            "personnel": 1,
+            "predecessors": [],
+            "source_path": "support_activities.activities[2].jobs[0]",
+            "spares": []
+          }
+        ]
+      }
+    ],
+    "aircraft": [
+      {
+        "aircraft_type": "F35",
+        "airport": "",
+        "airport_id": "",
+        "index": 0,
+        "initial_calendar_days": 0,
+        "initial_cycles": 0,
+        "initial_flight_hours": 0,
+        "initial_state": "available",
+        "model": "F35",
+        "tail_number": "F35-01"
+      },
+      {
+        "aircraft_type": "F35",
+        "airport": "",
+        "airport_id": "",
+        "index": 1,
+        "initial_calendar_days": 0,
+        "initial_cycles": 0,
+        "initial_flight_hours": 0,
+        "initial_state": "available",
+        "model": "F35",
+        "tail_number": "F35-02"
+      }
+    ],
+    "components": [
+      {
+        "aircraft_indexes": [
+          0,
+          1
+        ],
+        "component_id": "f35",
+        "failure_rate_per_hour": 0,
+        "failure_threshold": 1,
+        "index": 0,
+        "name": "F35",
+        "parent_index": -1,
+        "product_id": "",
+        "product_type": "",
+        "quantity": 1,
+        "repair_activity_index": -1,
+        "repair_duration_minutes": 0,
+        "source_path": "equipment_tree.components[0]"
+      }
+    ],
+    "domain": "aircraft-support",
+    "duration_minutes": 60,
+    "missions": [
+      {
+        "cancel_minutes": 5,
+        "duration_minutes": 10,
+        "index": 0,
+        "min_required_aircraft": 1,
+        "mission_id": "sortie-a-d1-w1",
+        "name": "Sortie A",
+        "operations_plan_group_id": "f35-daily",
+        "planned_start": 20,
+        "preparation_start": 10,
+        "priority": 1,
+        "required_aircraft": 1,
+        "required_aircraft_type": "F35",
+        "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+        "success_point": 0.75
+      },
+      {
+        "cancel_minutes": 5,
+        "duration_minutes": 10,
+        "index": 1,
+        "min_required_aircraft": 1,
+        "mission_id": "sortie-b-d1-w1",
+        "name": "Sortie B",
+        "operations_plan_group_id": "f35-daily",
+        "planned_start": 40,
+        "preparation_start": 30,
+        "priority": 1,
+        "required_aircraft": 1,
+        "required_aircraft_type": "F35",
+        "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+        "success_point": 0.75
+      }
+    ],
+    "natural_completion_enabled": false,
+    "phases": [
+      "transport_arrivals",
+      "mission_returns",
+      "job_progress_and_completions",
+      "failures",
+      "operations_postflight_before_preparation",
+      "preventive_generation",
+      "preflight_generation",
+      "resource_dispatch",
+      "mission_dispatch",
+      "operations_postflight_after_dispatch",
+      "mission_success",
+      "daily_readiness",
+      "operational_availability",
+      "downtime",
+      "stop"
+    ],
+    "plan_version": "aircraft-support-plan/v1alpha2",
+    "preventive_cycles": [],
+    "resource_nodes": [
+      {
+        "equipment_capacity": 1,
+        "index": 0,
+        "inventory": [],
+        "node_id": "flight-line",
+        "organization_node_id": "flight-line",
+        "personnel_capacity": 1,
+        "source_path": "support_network.nodes[0]"
+      }
+    ],
+    "rng_profile": "legacy-sequential-v1",
+    "semantic_profile": "legacy-minute-v1",
+    "source_inputs_sha256": "59c6397c9529fcd6582221deab72744cd4d5788c9b7b5e0fc945e9c15cdf8e5c",
+    "supply_routes": [],
+    "unsupported_features": [],
+    "work_policy": "stable-topological-serial"
+  },
+  "lineage": {
+    "business_fingerprint": "58bc6d1abdc3339a071e387bd359ce92d7f22e57204182e30d991fc0e6b1e0de",
+    "canonical_sha256": "59c6397c9529fcd6582221deab72744cd4d5788c9b7b5e0fc945e9c15cdf8e5c",
+    "core_fingerprint": "9a72979cebdb0bd03d9188e1033f81c3e6384cce12a465567a33eb6fe9b0f864",
+    "plan_fingerprint": "3584430f31d2fad37cba98fa7c2cd42bcc482d43640b10c0bee0f35eddf965fe",
+    "symbols": {
+      "activities": [
+        {
+          "id": "f35-daily-preflight",
+          "plan_path": "activities[0]",
+          "source_path": "support_activities.activities[0]"
+        },
+        {
+          "id": "f35-daily-relaunch",
+          "plan_path": "activities[1]",
+          "source_path": "support_activities.activities[1]"
+        },
+        {
+          "id": "f35-daily-postflight",
+          "plan_path": "activities[2]",
+          "source_path": "support_activities.activities[2]"
+        }
+      ],
+      "aircraft": [
+        {
+          "id": "F35-01",
+          "plan_path": "aircraft[0]",
+          "source_path": "aircraft.assets[0]"
+        },
+        {
+          "id": "F35-02",
+          "plan_path": "aircraft[1]",
+          "source_path": "aircraft.assets[1]"
+        }
+      ],
+      "components": [
+        {
+          "id": "f35",
+          "plan_path": "components[0]",
+          "source_path": "equipment_tree.components[0]"
+        }
+      ],
+      "missions": [
+        {
+          "id": "sortie-a-d1-w1",
+          "plan_path": "missions[0]",
+          "source_path": "mission_profile.composite_tasks[0].taskItems[0]"
+        },
+        {
+          "id": "sortie-b-d1-w1",
+          "plan_path": "missions[1]",
+          "source_path": "mission_profile.composite_tasks[0].taskItems[1]"
+        }
+      ],
+      "preventive_cycles": [],
+      "resource_nodes": [
+        {
+          "id": "flight-line",
+          "plan_path": "resource_nodes[0]",
+          "source_path": "support_network.nodes[0]"
+        }
+      ],
+      "supply_routes": []
+    },
+    "version": "compiler-lineage/v2"
+  }
+}

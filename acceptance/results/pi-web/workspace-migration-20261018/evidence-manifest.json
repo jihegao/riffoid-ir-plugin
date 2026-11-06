@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "exportedAt": "2026-10-18T13:46:09.082Z",
+  "source": "<EXTERNAL_TEST_ROOT>/results/riff-pi/workspace-migration-2026-10-18T13-39-19-786Z",
+  "files": [
+    {
+      "name": "baseline-browser-artifact.json",
+      "bytes": 10265,
+      "sha256": "f9694c248aa92231e983e6189add3e71d16deea68d7305391c6cf084475c7d3d"
+    },
+    {
+      "name": "baseline-business.json",
+      "bytes": 8811,
+      "sha256": "15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c"
+    },
+    {
+      "name": "baseline-independent-reference.json",
+      "bytes": 13457,
+      "sha256": "8222ad1091a22e042b8593777b42caa013cb1a7f2a8d6ee59a924a6513d43524"
+    },
+    {
+      "name": "baseline-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f"
+    },
+    {
+      "name": "baseline-plan.json",
+      "bytes": 5119,
+      "sha256": "59fe0b42d39796eb7a99fd1dfd14c36a3d0d50744532570caa9c02fe54d59875"
+    },
+    {
+      "name": "baseline-record.json",
+      "bytes": 12165,
+      "sha256": "92c4aef1901c659cf55cb67f74155aa220114024eb0a2cb837d3ac6abaa4e93b"
+    },
+    {
+      "name": "baseline-runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef"
+    },
+    {
+      "name": "business-edit.json",
+      "bytes": 175,
+      "sha256": "a5b8e5ccdd68ac27b355921a7f7725898fb64903296c1db99e29c211504c5c61"
+    },
+    {
+      "name": "check.txt",
+      "bytes": 2134,
+      "sha256": "010d6b25cce34c47cfcac16a71ee52ce447b4c06f5270f4baad6aeadcec5cc97"
+    },
+    {
+      "name": "domain-extension-diagnostic.json",
+      "bytes": 1940,
+      "sha256": "4f8efff23bce737a8630b892f854eb743d3e692caedefc6cb06f1640998e3013"
+    },
+    {
+      "name": "host-manifest.json",
+      "bytes": 3417,
+      "sha256": "c1fa4e3fe6e61c7b764cbb19162acfe98862ab84e7b92c4650e74c70bc770e72"
+    },
+    {
+      "name": "replay-browser-artifact.json",
+      "bytes": 10265,
+      "sha256": "f9694c248aa92231e983e6189add3e71d16deea68d7305391c6cf084475c7d3d"
+    },
+    {
+      "name": "replay-business.json",
+      "bytes": 8811,
+      "sha256": "15db85afde93cfdfd356b8a32954786d3cd1cb0e517671d6f99642181676b22c"
+    },
+    {
+      "name": "replay-independent-reference.json",
+      "bytes": 13457,
+      "sha256": "8222ad1091a22e042b8593777b42caa013cb1a7f2a8d6ee59a924a6513d43524"
+    },
+    {
+      "name": "replay-model.simpack",
+      "bytes": 5946,
+      "sha256": "301acca96e06776f936eeda67ba8ce6dd2b35fab93415dcd7965775a18f98b2f"
+    },
+    {
+      "name": "replay-plan.json",
+      "bytes": 5119,
+      "sha256": "59fe0b42d39796eb7a99fd1dfd14c36a3d0d50744532570caa9c02fe54d59875"
+    },
+    {
+      "name": "replay-record.json",
+      "bytes": 12226,
+      "sha256": "2c5462840e86b2d0783669204c6e7801cb7adf8ef230d93d93f48fe7c930547f"
+    },
+    {
+      "name": "replay-runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef"
+    },
+    {
+      "name": "riff-pi-observation.json",
+      "bytes": 1957,
+      "sha256": "1837564e77ebd41d762c7c7da1e0400b381aaa2c3eec3adeee92c3320ab75b28"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 3878,
+      "sha256": "d3c4ee7ef3ee3ad222aadce4d42791504692bfa0676a4ad7647d854c0a4c8ab0"
+    },
+    {
+      "name": "syntax-diagnostic.json",
+      "bytes": 307,
+      "sha256": "bb6740a80bcfa4af453f0776b73731afc1fe7d2ddace984567a0a1a367400bea"
+    },
+    {
+      "name": "variant-browser-artifact.json",
+      "bytes": 10265,
+      "sha256": "0da2136cc400b1afeb5e081d075dfdba616b7f8576d9d95a371955628826e4c6"
+    },
+    {
+      "name": "variant-business.json",
+      "bytes": 8811,
+      "sha256": "60fb2160fbca2ae43bc6f7170872ea23ec42210505d86c2be74a2be23e86c5ad"
+    },
+    {
+      "name": "variant-independent-reference.json",
+      "bytes": 13457,
+      "sha256": "dc71e85313c107832555ab1ac37e8ceca772e9c4e3ee3db5431bca31566a8da5"
+    },
+    {
+      "name": "variant-model.simpack",
+      "bytes": 5997,
+      "sha256": "94a04c41106d520f8c74e54cda6933eb01bb7ecf2d9163e90e52293ed6b5849d"
+    },
+    {
+      "name": "variant-plan.json",
+      "bytes": 5119,
+      "sha256": "f6a9f0522a6dd6b68125f0df49774d90ada5f630fd2f431be106083b56c1f461"
+    },
+    {
+      "name": "variant-record.json",
+      "bytes": 12165,
+      "sha256": "40307f40bac825f7503825d08ca777d26072b053910bc0ecdfd7c459dcd4f991"
+    },
+    {
+      "name": "variant-runtime.js",
+      "bytes": 24317,
+      "sha256": "54cf8400a889748d6a796b10a3a1789ff6f622fd5fd986429ab28e2995d839ef"
+    },
+    {
+      "name": "workspace-migration.jpg",
+      "bytes": 138847,
+      "sha256": "4afdcd1615573d84a76cde7add0b78af52108bf25ddc32281f7b18446cf1e4ac"
+    },
+    {
+      "name": "workspace-migration.json",
+      "bytes": 3101,
+      "sha256": "7038e9cefd72f163978b32e93a17233500279125ca654e65d00e71d8fb7dcc0b"
+    }
+  ],
+  "skipped": [
+    "model-before",
+    "raw-test-output.log"
+  ]
+}

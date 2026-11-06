@@ -1,0 +1,193 @@
+{
+  "activities": [
+    {
+      "activity_id": "f35-daily-preflight",
+      "aircraft_model": "F35",
+      "equipment_component_index": -1,
+      "index": 0,
+      "kind": "preflight",
+      "maintenance_methods": [],
+      "name": "Preflight",
+      "phase": "preflight",
+      "plan_group_id": "f35-daily",
+      "priority": 1,
+      "replacement_ratio": 0,
+      "resource_node_index": 0,
+      "source_path": "support_activities.activities[0]",
+      "steps": [
+        {
+          "code": "PRE-1",
+          "duration_minutes": 3,
+          "equipment": 1,
+          "index": 0,
+          "personnel": 1,
+          "predecessors": [],
+          "source_path": "support_activities.activities[0].jobs[0]",
+          "spares": []
+        }
+      ]
+    },
+    {
+      "activity_id": "f35-daily-relaunch",
+      "aircraft_model": "F35",
+      "equipment_component_index": -1,
+      "index": 1,
+      "kind": "relaunch",
+      "maintenance_methods": [],
+      "name": "Relaunch",
+      "phase": "relaunch",
+      "plan_group_id": "f35-daily",
+      "priority": 1,
+      "replacement_ratio": 0,
+      "resource_node_index": 0,
+      "source_path": "support_activities.activities[1]",
+      "steps": []
+    },
+    {
+      "activity_id": "f35-daily-postflight",
+      "aircraft_model": "F35",
+      "equipment_component_index": -1,
+      "index": 2,
+      "kind": "postflight",
+      "maintenance_methods": [],
+      "name": "Postflight",
+      "phase": "postflight",
+      "plan_group_id": "f35-daily",
+      "priority": 1,
+      "replacement_ratio": 0,
+      "resource_node_index": 0,
+      "source_path": "support_activities.activities[2]",
+      "steps": [
+        {
+          "code": "POST-1",
+          "duration_minutes": 2,
+          "equipment": 1,
+          "index": 0,
+          "personnel": 1,
+          "predecessors": [],
+          "source_path": "support_activities.activities[2].jobs[0]",
+          "spares": []
+        }
+      ]
+    }
+  ],
+  "aircraft": [
+    {
+      "aircraft_type": "F35",
+      "airport": "",
+      "airport_id": "",
+      "index": 0,
+      "initial_calendar_days": 0,
+      "initial_cycles": 0,
+      "initial_flight_hours": 0,
+      "initial_state": "available",
+      "model": "F35",
+      "tail_number": "F35-01"
+    },
+    {
+      "aircraft_type": "F35",
+      "airport": "",
+      "airport_id": "",
+      "index": 1,
+      "initial_calendar_days": 0,
+      "initial_cycles": 0,
+      "initial_flight_hours": 0,
+      "initial_state": "available",
+      "model": "F35",
+      "tail_number": "F35-02"
+    }
+  ],
+  "components": [
+    {
+      "aircraft_indexes": [
+        0,
+        1
+      ],
+      "component_id": "f35",
+      "failure_rate_per_hour": 0,
+      "failure_threshold": 1,
+      "index": 0,
+      "name": "F35",
+      "parent_index": -1,
+      "product_id": "",
+      "product_type": "",
+      "quantity": 1,
+      "repair_activity_index": -1,
+      "repair_duration_minutes": 0,
+      "source_path": "equipment_tree.components[0]"
+    }
+  ],
+  "domain": "aircraft-support",
+  "duration_minutes": 60,
+  "missions": [
+    {
+      "cancel_minutes": 5,
+      "duration_minutes": 10,
+      "index": 0,
+      "min_required_aircraft": 1,
+      "mission_id": "sortie-a-d1-w1",
+      "name": "Sortie A",
+      "operations_plan_group_id": "f35-daily",
+      "planned_start": 20,
+      "preparation_start": 10,
+      "priority": 1,
+      "required_aircraft": 1,
+      "required_aircraft_type": "F35",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[0]",
+      "success_point": 0.75
+    },
+    {
+      "cancel_minutes": 5,
+      "duration_minutes": 10,
+      "index": 1,
+      "min_required_aircraft": 1,
+      "mission_id": "sortie-b-d1-w1",
+      "name": "Sortie B",
+      "operations_plan_group_id": "f35-daily",
+      "planned_start": 40,
+      "preparation_start": 30,
+      "priority": 1,
+      "required_aircraft": 1,
+      "required_aircraft_type": "F35",
+      "source_path": "mission_profile.composite_tasks[0].taskItems[1]",
+      "success_point": 0.75
+    }
+  ],
+  "natural_completion_enabled": false,
+  "phases": [
+    "transport_arrivals",
+    "mission_returns",
+    "job_progress_and_completions",
+    "failures",
+    "operations_postflight_before_preparation",
+    "preventive_generation",
+    "preflight_generation",
+    "resource_dispatch",
+    "mission_dispatch",
+    "operations_postflight_after_dispatch",
+    "mission_success",
+    "daily_readiness",
+    "operational_availability",
+    "downtime",
+    "stop"
+  ],
+  "plan_version": "aircraft-support-plan/v1alpha2",
+  "preventive_cycles": [],
+  "resource_nodes": [
+    {
+      "equipment_capacity": 1,
+      "index": 0,
+      "inventory": [],
+      "node_id": "flight-line",
+      "organization_node_id": "flight-line",
+      "personnel_capacity": 1,
+      "source_path": "support_network.nodes[0]"
+    }
+  ],
+  "rng_profile": "legacy-sequential-v1",
+  "semantic_profile": "legacy-minute-v1",
+  "source_inputs_sha256": "59c6397c9529fcd6582221deab72744cd4d5788c9b7b5e0fc945e9c15cdf8e5c",
+  "supply_routes": [],
+  "unsupported_features": [],
+  "work_policy": "stable-topological-serial"
+}
